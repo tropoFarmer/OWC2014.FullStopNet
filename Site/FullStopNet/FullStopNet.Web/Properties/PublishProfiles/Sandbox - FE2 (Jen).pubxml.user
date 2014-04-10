@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6NHexgh/K0a4Laaax4jvgAAAAAACAAAAAAAQZgAAAAEAACAAAACzRpJoqH3Mi0mw0ZjIiqnmuW0B5/OR4Nx4+DFq0hbh+QAAAAAOgAAAAAIAACAAAAAQjyt3idPnzt/yDnq5SN7wnhLoP61NifSvSOoYdSE4KIAAAACgGp+GSCXw0e7hkRsoF5kdEx2LICS+35FpxytVXChT6EOzl0sUjtHdQlN+JczTidT4+pXDV1hR1/jbHEztgfc0EtV+d9PLvUcnf+mH5du9WUFbfGrQ0HGM5a3eNWVdOQmciwo8z5gjDxHSI729lw9kmuIe6eWinxcilInVIRK4zkAAAAAP/XoyiMvE/KR3bEstZi37MbcVTLUcGIWff3u+FM3UwOo+4GxJNFHCHvPFJ4n+HjCkUSwRjbvsOwOvuUh24PrU</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <AzureDBConnectionStrings Include="Data Source=tcp:u8zv7a09yn.database.windows.net,1433;Initial Catalog=fullstopnet-b-dev;User ID=fullstopnet@u8zv7a09yn;Password=73jkveKT0MR" />
+    <AzureDBConnectionStrings Include="Data Source=tcp:u8zv7a09yn.database.windows.net,1433;Initial Catalog=fullstopnet-dev;User ID=fullstopnet@u8zv7a09yn;Password=73jkveKT0MR" />
+  </ItemGroup>
+</Project>
