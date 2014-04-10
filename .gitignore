@@ -5,3 +5,5 @@
 /Site/FullStopNet/packages
 /Site/FullStopNet/*.suo
 /Site/FullStopNet/FullStopNet.v12.suo
+/Site/FullStopNet/FullStopNet.Web/App_Data/TEMP
+/Site/FullStopNet/FullStopNet.Web/App_Data/Logs
