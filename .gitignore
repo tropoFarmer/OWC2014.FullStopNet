@@ -5,6 +5,7 @@
 App_Data/
 umbraco.config
 [Tt]emp/
+[Cc]ached/
 
 # User-specific files
 *.suo

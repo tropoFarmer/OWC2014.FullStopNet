@@ -6,9 +6,13 @@ using System.Web.Mvc;
 using MetroBlooms.ViewModels;
 
 using umbraco;
-
+using MetroBlooms.Extensions;
 using Umbraco.Web.Mvc;
 using MetroBlooms.ViewModels.Global;
+using System.Web;
+using System.IO;
+using System.Drawing;
+using MetroBlooms.Utilities.ImageProcessor;
 
 namespace MetroBlooms.Controllers
 {
@@ -33,6 +37,11 @@ namespace MetroBlooms.Controllers
         public ActionResult Foot()
         {
             return PartialView(new FootViewModel());
+        }
+
+        public ImageResult HandleImage(string file, int width = 0, int height = 0, string anchor = "" )
+        {
+            return new ImageResult(file, width, height, anchor);
         }
     }
 }
