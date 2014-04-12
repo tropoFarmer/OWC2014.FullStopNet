@@ -117,6 +117,7 @@ body {
     color: #333333;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    line-height: 1.2;
 }
 
 a {
@@ -133,10 +134,7 @@ a {
 
 .grid {
     display: block;
-}
-
-* + .grid {
-    margin-top: 24px;
+    padding: 24px 0;
 }
 
 .grid:before,
@@ -149,7 +147,7 @@ a {
     clear: both;
 }
 
-* + .section {
+* + .row {
     margin-top: 24px;
 }
 
@@ -166,7 +164,11 @@ a {
 ------------------------------------------------------------------------ */
 
 .siteFooter {
-    padding-top: 20px;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* ---------------------------------------------------------------------
@@ -174,7 +176,7 @@ a {
 ------------------------------------------------------------------------ */
 
 .hdg {
-    font-weight: 600;
+    font-family: 'Architects Daughter', 'Open Sans', sans-serif;
 }
 
 .hdg_1 {
@@ -198,10 +200,27 @@ a {
 ------------------------------------------------------------------------ */
 
 .btn {
+    display: inline-block;
+    padding: 5px 10px;
     border-radius: 6px;
     text-decoration: none;
     color: #ffffff;
     background: #bada55;
 }
+
+.btn_lg {
+    padding: 8px 12px;
+    font-size: 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Content
+------------------------------------------------------------------------ */
+
+p {
+    margin-bottom: 1em;
+}
+
+
 
 
