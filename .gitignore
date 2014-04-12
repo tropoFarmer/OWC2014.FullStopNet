@@ -8,3 +8,7 @@
 /Site/FullStopNet/FullStopNet.Web/App_Data/TEMP
 /Site/FullStopNet/FullStopNet.Web/App_Data/Logs
 /Site/FullStopNet/FullStopNet.Web/FullStopNet.Web.csproj.user
+
+
+#Umbraco
+umbraco.config
