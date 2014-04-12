@@ -117,3 +117,10 @@ C:\Source\OWC2014.FullStopNet.Umbraco\Site\MetroBlooms\MetroBlooms\bin\umbraco.p
 C:\Source\OWC2014.FullStopNet.Umbraco\Site\MetroBlooms\MetroBlooms\obj\Dev\MetroBlooms.csprojResolveAssemblyReference.cache
 C:\Source\OWC2014.FullStopNet.Umbraco\Site\MetroBlooms\MetroBlooms\obj\Dev\MetroBlooms.dll
 C:\Source\OWC2014.FullStopNet.Umbraco\Site\MetroBlooms\MetroBlooms\obj\Dev\MetroBlooms.pdb
+C:\Source\OWC2014.FullStopNet.Umbraco\Site\MetroBlooms\MetroBlooms\bin\MetroBlooms.Api.dll
+C:\Source\OWC2014.FullStopNet.Umbraco\Site\MetroBlooms\MetroBlooms\bin\System.Web.Optimization.dll
+C:\Source\OWC2014.FullStopNet.Umbraco\Site\MetroBlooms\MetroBlooms\bin\MetroBlooms.Api.pdb
+C:\Source\OWC2014.FullStopNet.Umbraco\Site\MetroBlooms\MetroBlooms\bin\System.Web.Optimization.xml
+C:\Source\OWC2014.FullStopNet.Umbraco\Site\MetroBlooms\MetroBlooms\bin\WebGrease.dll
+C:\Source\OWC2014.FullStopNet.Umbraco\Site\MetroBlooms\MetroBlooms\bin\Antlr3.Runtime.dll
+C:\Source\OWC2014.FullStopNet.Umbraco\Site\MetroBlooms\MetroBlooms\bin\Antlr3.Runtime.pdb
