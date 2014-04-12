@@ -276,6 +276,7 @@
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Extensions\NodeExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
@@ -286,6 +287,7 @@
     <Compile Include="Utilities\Config.cs" />
     <Compile Include="Utilities\UmbracoImage.cs" />
     <Compile Include="ViewModels\Home\HomeViewModel.cs" />
+    <Compile Include="ViewModels\SEO.cs" />
     <Compile Include="ViewModels\UmbracoView.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -351,7 +353,6 @@
   <ItemGroup>
     <Folder Include="Assets\" />
     <Folder Include="Views\MacroPartials\" />
-    <Folder Include="Views\Partials\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
@@ -362,6 +363,7 @@
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\MainLayout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Partials\Head.cshtml" />
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
