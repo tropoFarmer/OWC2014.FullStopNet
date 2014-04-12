@@ -1,0 +1,14 @@
+﻿@using MetroBlooms.Extensions
+@model MetroBlooms.ViewModels.Global.HeaderViewModel
+
+@if(Model.MainNavigation != null && Model.MainNavigation.Items.Any()){
+<nav>
+    <ul>
+        @foreach(var link in Model.MainNavigation.Items){
+        <li>
+            <a href="@link.Url" target="@(link.NewWindow?"_blank":"_self")">@link.Title</a>
+        </li>
+        }
+    </ul>
+</nav>
+}

@@ -369,12 +369,15 @@
     <Content Include="Views\MainLayout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Partials\Head.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Shared\DisplayTemplates\Object.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Object.cshtml" />
+=======
     <Content Include="Views\Partials\Header.cshtml" />
     <Content Include="Views\Generic.cshtml" />
     <Content Include="Views\Partials\Foot.cshtml" />
     <Content Include="Views\Partials\Footer.cshtml" />
+>>>>>>> 38d48a61b2517207eab0f971aecf1f6f95cfc4d0
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

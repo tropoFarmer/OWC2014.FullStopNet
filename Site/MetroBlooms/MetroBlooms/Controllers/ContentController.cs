@@ -8,6 +8,7 @@ using MetroBlooms.ViewModels;
 using umbraco;
 
 using Umbraco.Web.Mvc;
+using MetroBlooms.ViewModels.Global;
 
 namespace MetroBlooms.Controllers
 {
@@ -15,8 +16,23 @@ namespace MetroBlooms.Controllers
     {
         public ActionResult Head()
         {
-            var currentNode = uQuery.GetCurrentNode();
-            return PartialView(new SEO(currentNode));
+            
+            return PartialView(new HeadViewModel());
+        }
+
+        public ActionResult Header()
+        {
+            return PartialView(new HeaderViewModel());
+        }
+
+        public ActionResult Footer()
+        {
+            return PartialView(new FooterViewModel());
+        }
+
+        public ActionResult Foot()
+        {
+            return PartialView(new FootViewModel());
         }
     }
 }
