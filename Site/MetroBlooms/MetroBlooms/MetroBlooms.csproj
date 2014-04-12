@@ -277,6 +277,7 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\GenericController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Extensions\NodeExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
@@ -286,8 +287,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Config.cs" />
     <Compile Include="Utilities\UmbracoImage.cs" />
+    <Compile Include="ViewModels\Generic\GenericViewModel.cs" />
+    <Compile Include="ViewModels\Global\FooterViewModel.cs" />
+    <Compile Include="ViewModels\Global\FootViewModel.cs" />
+    <Compile Include="ViewModels\Global\HeaderViewModel.cs" />
     <Compile Include="ViewModels\Home\HomeViewModel.cs" />
-    <Compile Include="ViewModels\SEO.cs" />
+    <Compile Include="ViewModels\Global\HeadViewModel.cs" />
     <Compile Include="ViewModels\UmbracoView.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -364,6 +369,10 @@
     <Content Include="Views\MainLayout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Partials\Head.cshtml" />
+    <Content Include="Views\Partials\Header.cshtml" />
+    <Content Include="Views\Generic.cshtml" />
+    <Content Include="Views\Partials\Foot.cshtml" />
+    <Content Include="Views\Partials\Footer.cshtml" />
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
