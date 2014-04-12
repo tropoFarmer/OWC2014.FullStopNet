@@ -17,9 +17,10 @@
     <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
 
     <!-- STYLESHEETS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen, projection" href="assets/styles/screen.css" />
     <link rel="stylesheet" media="all and (min-width: 640px)" href="assets/styles/screen-medium.css" />
-    <link rel="stylesheet" media="all and (min-width: 1024px)" href="assets/styles/screen-large.css" />
+    <link rel="stylesheet" media="all and (min-width: 960px)" href="assets/styles/screen-large.css" />
 
     <!-- JQUERY -->
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -28,3 +29,4 @@
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="assets/scripts/global.js"></script>
 </head>
+<body>

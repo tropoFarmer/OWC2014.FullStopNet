@@ -3,10 +3,14 @@ Original Author: Fullstop Net (Overnight Website Challenge 2014)
 
 Target Browsers: All
 Media Type: All
-Width: 1024px+
+Width: 960px+
 ------------------------------------------------------------------------ */
 
-body:before {
-    content: 'Large';
+/* ---------------------------------------------------------------------
+ Layout
+------------------------------------------------------------------------ */
+
+.container {
+    max-width: 960px;
 }
 
