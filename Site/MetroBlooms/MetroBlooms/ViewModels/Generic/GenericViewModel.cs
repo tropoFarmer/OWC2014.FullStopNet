@@ -1,22 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using umbraco.NodeFactory;
+﻿using MetroBlooms.Utilities;
 using umbraco;
+using umbraco.NodeFactory;
 
 namespace MetroBlooms.ViewModels.Generic
 {
     public class GenericViewModel : UmbracoView
     {
         public string Content { get; set; }
-        public GenericViewModel() { }
+        public static string SiteTitle { get; set; }
+
+        public GenericViewModel()
+        {
+        }
 
         public GenericViewModel(Node contextNode)
         {
             if (contextNode == null) return;
 
-            this.Content = contextNode.GetProperty<string>("content");
+            Content = contextNode.GetProperty<string>("content");
+            SiteTitle = Config.GetHomeNode().GetProperty<string>("siteTitle");
         }
     }
 }

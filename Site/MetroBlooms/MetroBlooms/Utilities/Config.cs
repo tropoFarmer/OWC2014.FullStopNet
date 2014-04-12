@@ -22,12 +22,27 @@ namespace MetroBlooms.Utilities
 
         }
 
+        public static Node GetHomeNode()
+        {
+            return uQuery.GetCurrentNode().GetAncestorOrSelfNodes().FirstOrDefault(node => node.NodeTypeAlias == "home");
+        }
+
         /// <summary>
         /// How long to cache media items from Umbraco in seconds
         /// </summary>
         public static int UmbracoImageCache
         {
             get { return GetConfigSetting<int>("imageCacheInSeconds"); }
+        }
+
+        public static string GoogleAnalyticsKey
+        {
+            get { return GetConfigSetting<string>("googleAnalyticsDomain"); }
+        }
+
+        public static string GoogleAnalyticsDomain
+        {
+            get { return GetConfigSetting<string>("googleAnalyticsKey"); }
         }
 
         private static T GetConfigSetting<T>(string name)
