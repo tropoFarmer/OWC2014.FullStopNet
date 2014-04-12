@@ -10,6 +10,7 @@ namespace MetroBlooms.ViewModels.Home
     public class HomeViewModel : UmbracoView
     {
         public HtmlString MainContent { get; set; }
+
         public HomeViewModel()
         {
             var currentNode = uQuery.GetCurrentNode();

@@ -15,7 +15,9 @@ namespace MetroBlooms.Controllers
         {
             var currentNode = uQuery.GetCurrentNode();
 
-            return View(new HomeViewModel());
+            var viewModel = new HomeViewModel();
+
+            return View(viewModel);
         }
     }
 }

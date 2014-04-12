@@ -282,14 +282,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Extensions\NodeExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
-    <Compile Include="Extensions\GeneralExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Config.cs" />
     <Compile Include="Utilities\UmbracoImage.cs" />
-    <Compile Include="Utilities\Util.cs" />
     <Compile Include="ViewModels\Generic\GenericViewModel.cs" />
     <Compile Include="ViewModels\Global\FooterViewModel.cs" />
     <Compile Include="ViewModels\Global\FootViewModel.cs" />
@@ -371,13 +369,15 @@
     <Content Include="Views\MainLayout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Partials\Head.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Shared\DisplayTemplates\Object.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Object.cshtml" />
+=======
     <Content Include="Views\Partials\Header.cshtml" />
     <Content Include="Views\Generic.cshtml" />
     <Content Include="Views\Partials\Foot.cshtml" />
     <Content Include="Views\Partials\Footer.cshtml" />
-    <Content Include="Views\Partials\GoogleAnalytics.cshtml" />
+>>>>>>> 38d48a61b2517207eab0f971aecf1f6f95cfc4d0
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
