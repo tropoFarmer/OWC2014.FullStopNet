@@ -275,19 +275,63 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="Extensions\NodeExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Config.cs" />
+    <Compile Include="Utilities\UmbracoImage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="css\dummy.txt" />
+    <Content Include="Config\splashes\booting.aspx" />
+    <Content Include="Config\splashes\noNodes.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="media\dummy.txt" />
+    <Content Include="Config\404handlers.config" />
+    <Content Include="Config\applications.config" />
+    <Content Include="Config\backup\404handlers.config.backup" />
+    <Content Include="Config\backup\applications.config.backup" />
+    <Content Include="Config\backup\BaseRestExtensions.config.backup" />
+    <Content Include="Config\backup\ClientDependency.config.backup" />
+    <Content Include="Config\backup\Dashboard.config.backup" />
+    <Content Include="Config\backup\EmbeddedMedia.config.backup" />
+    <Content Include="Config\backup\ExamineIndex.config.backup" />
+    <Content Include="Config\backup\ExamineSettings.config.backup" />
+    <Content Include="Config\backup\feedProxy.config.backup" />
+    <Content Include="Config\backup\FileSystemProviders.config.backup" />
+    <Content Include="Config\backup\log4net.config.backup" />
+    <Content Include="Config\backup\metablogConfig.config.backup" />
+    <Content Include="Config\backup\restExtensions.config.backup" />
+    <Content Include="Config\backup\scripting.config.backup" />
+    <Content Include="Config\backup\Skinning.config.backup" />
+    <Content Include="Config\backup\tinyMceConfig.config.backup" />
+    <Content Include="Config\backup\trees.config.backup" />
+    <Content Include="Config\backup\umbracoSettings.config.backup" />
+    <Content Include="Config\backup\UrlRewriting.config.backup" />
+    <Content Include="Config\backup\xsltExtensions.config.backup" />
+    <Content Include="Config\BaseRestExtensions.config" />
+    <Content Include="Config\ClientDependency.config" />
+    <Content Include="Config\Dashboard.config" />
+    <Content Include="Config\EmbeddedMedia.config" />
+    <Content Include="Config\ExamineIndex.config" />
+    <Content Include="Config\ExamineSettings.config" />
+    <Content Include="Config\feedProxy.config" />
+    <Content Include="Config\FileSystemProviders.config" />
+    <Content Include="Config\log4net.config" />
+    <Content Include="Config\metablogConfig.config" />
+    <Content Include="Config\restExtensions.config" />
+    <Content Include="Config\scripting.config" />
+    <Content Include="Config\Skinning.config" />
+    <Content Include="Config\tinyMceConfig.config" />
+    <Content Include="Config\trees.config" />
+    <Content Include="Config\umbracoSettings.config" />
+    <Content Include="Config\UrlRewriting.config" />
+    <Content Include="Config\xsltExtensions.config" />
     <None Include="Properties\PublishProfiles\Sandbox - FE1 %28Ferenc%29.pubxml" />
     <None Include="Properties\PublishProfiles\Sandbox - FE2 %28Jen%29.pubxml" />
     <None Include="Properties\PublishProfiles\Sandbox - FE3 %28Matt%29.pubxml" />
@@ -303,8 +347,6 @@
   <ItemGroup>
     <Folder Include="Assets\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Extensions\" />
-    <Folder Include="Utilities\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\MacroPartials\" />
     <Folder Include="Views\Partials\" />
@@ -315,6 +357,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\Dev.pubxml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\MainLayout.cshtml" />
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
