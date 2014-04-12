@@ -1,6 +1,8 @@
     <div class="siteFooter">
-        Footer
+        <div class="container">
+            Footer
+        </div> <!-- /.container -->
     </div>
-</div> <!-- /.container -->
+</div> <!-- /.site -->
 </body>
 </html>

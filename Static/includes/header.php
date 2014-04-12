@@ -1,4 +1,7 @@
-<div class="container">
+<div class="site">
     <div class="siteHeader">
-        Header
-    </div>
+        <div class="container">
+            Header
+        </div> <!-- /.container -->
+    </div> <!-- /.siteHeader -->
+
