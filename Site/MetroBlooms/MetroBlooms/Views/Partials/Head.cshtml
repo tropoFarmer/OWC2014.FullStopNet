@@ -1,0 +1,8 @@
+﻿@using MetroBlooms.Extensions
+@model MetroBlooms.ViewModels.SEO
+
+<title>@Model.PageTitle</title>
+
+
+@if(Model.PageDescription.IsSet()){<meta name="description" content="@Model.PageDescription" />}
+@if (Model.PageAuthor.IsSet()){<meta name="author" content="@Model.PageAuthor" />}
