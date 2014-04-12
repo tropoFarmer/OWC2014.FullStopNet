@@ -12,6 +12,7 @@ namespace MetroBlooms.ViewModels.Home
     {
         public string MainContent { get; set; }
         public UmbracoImage Image { get; set; }
+
         public HomeViewModel()
         {
             var currentNode = uQuery.GetCurrentNode();
