@@ -18,6 +18,8 @@
 
         <!-- STYLESHEETS -->
         <link rel="stylesheet" media="screen, projection" href="assets/styles/screen.css" />
+        <link rel="stylesheet" media="all and (min-width: 640px)" href="assets/styles/screen-medium.css" />
+        <link rel="stylesheet" media="all and (min-width: 1024px)" href="assets/styles/screen-large.css" />
 
         <!-- JQUERY -->
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
