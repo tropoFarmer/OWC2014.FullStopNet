@@ -28,7 +28,7 @@ define(function(require) {
         ]);
 
 
-        var homePageSnapScroll = new SnapScroll('.contentSection');
+        var homePageSnapScroll = new SnapScroll('.js-scrollSection');
 
     };
 
