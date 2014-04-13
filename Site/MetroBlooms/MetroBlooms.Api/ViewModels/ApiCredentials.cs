@@ -8,11 +8,13 @@ namespace MetroBlooms.Api.ViewModels
     {
         private readonly string _userName;
         private readonly string _password;
+        private readonly string _rootApiUrl;
 
-        public ApiCredentials(string userName, string password)
+        public ApiCredentials(string userName, string password, string rootApiUrl)
         {
             _userName = userName;
             _password = password;
+            _rootApiUrl = rootApiUrl;
         }
 
         public string UserName
@@ -23,6 +25,11 @@ namespace MetroBlooms.Api.ViewModels
         public string Password
         {
             get { return _password; }
+        }
+
+        public string RootApiUrl
+        {
+            get { return _rootApiUrl; }
         }
     }
 }

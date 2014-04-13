@@ -22,11 +22,7 @@
     <link rel="stylesheet" media="all and (min-width: 640px)" href="assets/styles/screen-medium.css" />
     <link rel="stylesheet" media="all and (min-width: 960px)" href="assets/styles/screen-large.css" />
 
-    <!-- JQUERY -->
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="assets/scripts/jquery.min.js"><\/script>')</script>
-
     <!-- JAVASCRIPT -->
-    <script type="text/javascript" src="../assets/scripts/main.js"></script>
+    <script data-main="assets/scripts/bootstrap.js" src="assets/scripts/vendor/requirejs/require.min.js"></script>
 </head>
 <body>

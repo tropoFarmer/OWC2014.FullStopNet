@@ -1,0 +1,16 @@
+﻿@model MetroBlooms.ViewModels.Sections.ImageDisplaySection
+
+@if (Model.Image1 != null)
+{
+    <img src="@Model.Image1.Url" alt="@Model.Image1.Alt" />
+}
+
+@if (Model.Image2 != null)
+{
+    <img src="@Model.Image2.Url" alt="@Model.Image2.Alt" />
+}
+
+@if (Model.Image3 != null)
+{
+    <img src="@Model.Image3.Url" alt="@Model.Image3.Alt" />
+}

@@ -29,13 +29,33 @@
     </div>
     <div class="container">
         <div class="grid">
-            <div class="grid-col">
+            <div class="grid-col grid-col_full">
                 <h2 class="hdg hdg_1">Buttons</h2>
                 <div class="row">
                     <a class="btn" href="#">Button</a>
                     <a class="btn btn_lg" href="#">Button</a>
                     <button class="btn">Button</button>
                     <button class="btn btn_lg">Button</button>
+                </div> <!-- /.row -->
+            </div> <!-- /.grid-col -->
+        </div> <!-- /.grid -->
+    </div> <!-- /.container -->
+</div> <!-- /.section -->
+
+<div class="section">
+    <div class="section-bg">
+        <img src="" alt="" />
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="grid-col grid-col_full">
+                <h2 class="hdg hdg_1">Blocks</h2>
+                <div class="row">
+                    <div class="blocks blocks_3up">
+                        <div>Block</div>
+                        <div>Block</div>
+                        <div>Block</div>
+                    </div>
                 </div> <!-- /.row -->
             </div> <!-- /.grid-col -->
         </div> <!-- /.grid -->

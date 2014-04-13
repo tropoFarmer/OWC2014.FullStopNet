@@ -1,5 +1,8 @@
 ﻿@model MetroBlooms.ViewModels.Generic.GenericViewModel
 
-<div>
-    @Html.Raw(Model.Content)
-</div>
+@foreach (var section in Model.Sections)
+{
+    <div>
+        @Html.DisplayFor(x => section)
+    </div>
+}
