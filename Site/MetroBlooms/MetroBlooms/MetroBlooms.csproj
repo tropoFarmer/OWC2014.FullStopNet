@@ -325,8 +325,13 @@
     <Content Include="Assets\images\btn-rev-br.gif" />
     <Content Include="Assets\images\btn-rev-tl.gif" />
     <Content Include="Assets\images\btn-tl.gif" />
+    <Content Include="Assets\images\circle.png" />
     <Content Include="Assets\images\content-page-background-image.jpg" />
     <Content Include="Assets\images\favicon.ico" />
+    <Content Include="Assets\images\footer-icon-address.png" />
+    <Content Include="Assets\images\footer-icon-email.png" />
+    <Content Include="Assets\images\footer-icon-phone.png" />
+    <Content Include="Assets\images\footer-icon-privacy.png" />
     <Content Include="Assets\images\home\1.jpg" />
     <Content Include="Assets\images\home\2.jpg" />
     <Content Include="Assets\images\home\3.jpg" />
