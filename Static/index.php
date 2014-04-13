@@ -1,7 +1,7 @@
 <?php include 'includes/head.php'; ?>
 <?php include 'includes/header.php'; ?>
 
-<div class="section section_dark section_center js-scrollSection">
+<div class="section section_dark section_imgFull section_center js-scrollSection">
     <div class="section-bg" style="background-image: url(assets/images/test.jpg);"></div>
     <div class="container">
         <div class="homeContent homeContent_title">
@@ -10,7 +10,7 @@
     </div> <!-- /.container -->
 </div> <!-- /.section -->
 
-<div class="section section_small section_center js-scrollSection">
+<div class="section section_small section_imgFull section_center js-scrollSection">
     <div class="section-bg"><!-- BACKEND: This div optional if no bg image --></div>
     <div class="container">
         <h2 class="hdg hdg_2">Our Clean Water Problem</h2>
@@ -18,7 +18,7 @@
     </div> <!-- /.container -->
 </div> <!-- /.section -->
 
-<div class="section section_dark section_center js-scrollSection">
+<div class="section section_dark section_imgFull section_center js-scrollSection">
     <div class="section-bg" style="background-image: url(assets/images/test.jpg);"></div>
     <div class="container">
         <h2 class="hdg hdg_2">Out of <em>168</em> lakes monitored in the metro area, <em>35%</em> received a below average grade of D or F.</h2>
@@ -51,14 +51,14 @@
     </div> <!-- /.container -->
 </div> <!-- /.section -->
 
-<div class="section section_small section_color section_center js-scrollSection">
+<div class="section section_small section_imgFull section_color section_center js-scrollSection">
     <div class="section-bg"></div>
     <div class="container">
         <h2 class="hdg hdg_2">What we can do</h2>
     </div> <!-- /.container -->
 </div> <!-- /.section -->
 
-<div class="section section_dark section_left js-scrollSection">
+<div class="section section_dark section_imgFull section_left js-scrollSection">
     <div class="section-bg" style="background-image: url(assets/images/test.jpg);"></div>
     <div class="container">
         <h2 class="hdg hdg_2">Raingardens are one of the
@@ -69,7 +69,7 @@
     </div> <!-- /.container -->
 </div> <!-- /.section -->
 
-<div class="section section_dark section_center js-scrollSection">
+<div class="section section_dark section_imgFull section_center js-scrollSection">
     <div class="section-bg" style="background-image: url(assets/images/test.jpg);"></div>
     <div class="container">
         <h2 class="hdg hdg_2">Permeable pavement can also be a good alternate solution.</h2>
