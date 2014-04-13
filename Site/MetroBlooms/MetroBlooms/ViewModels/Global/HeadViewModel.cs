@@ -11,7 +11,6 @@ namespace MetroBlooms.ViewModels.Global
         public string PageAuthor { get; set; }
         public string PageKeywords { get; set; }
 
-
         public HeadViewModel()
         {
             Node currentNode = uQuery.GetCurrentNode();

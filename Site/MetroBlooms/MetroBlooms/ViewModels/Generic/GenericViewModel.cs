@@ -1,4 +1,5 @@
-﻿using MetroBlooms.Utilities;
+﻿using System.Security.Permissions;
+using MetroBlooms.Utilities;
 using umbraco;
 using umbraco.NodeFactory;
 
@@ -7,7 +8,6 @@ namespace MetroBlooms.ViewModels.Generic
     public class GenericViewModel : UmbracoView
     {
         public string Content { get; set; }
-        public static string SiteTitle { get; set; }
 
         public GenericViewModel()
         {
@@ -18,7 +18,6 @@ namespace MetroBlooms.ViewModels.Generic
             if (contextNode == null) return;
 
             Content = contextNode.GetProperty<string>("content");
-            SiteTitle = Config.GetHomeNode().GetProperty<string>("siteTitle");
         }
     }
 }
