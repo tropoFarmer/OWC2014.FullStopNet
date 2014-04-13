@@ -182,33 +182,6 @@ button {
 }
 
 /* ---------------------------------------------------------------------
- Site Header
------------------------------------------------------------------------- */
-
-.siteHeader {
-    width: 100%;
-}
-
-/* ---------------------------------------------------------------------
- Site Footer
------------------------------------------------------------------------- */
-
-.siteFooter {
-    padding: 20px;
-}
-
-.siteFooter_home {
-    padding-bottom: 40px;
-}
-
-.siteFooter_home .siteFooter-contact {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-/* ---------------------------------------------------------------------
  Headings
 ------------------------------------------------------------------------ */
 
@@ -257,27 +230,6 @@ button {
 }
 
 /* ---------------------------------------------------------------------
- Navigation
------------------------------------------------------------------------- */
-
-.nav {
-
-}
-
-.nav-list {
-    font-size: 0;
-}
-
-.nav-list > li {
-    display: block;
-    font-size: 15px;
-}
-
-.nav-list > li > a {
-    padding: 5px 20px;
-}
-
-/* ---------------------------------------------------------------------
  Sections
 ------------------------------------------------------------------------ */
 
@@ -314,6 +266,95 @@ button {
 p {
     margin-bottom: 1em;
 }
+
+/* ---------------------------------------------------------------------
+ Site Header
+------------------------------------------------------------------------ */
+
+.siteHeader {
+    width: 100%;
+}
+
+.siteHeader:before,
+.siteHeader:after {
+    content: ' ';
+    display: table;
+}
+
+.siteHeader:after {
+    clear: both;
+}
+
+* + .row {
+    margin-top: 24px;
+}
+
+.headerInfo {
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.headerLower {
+    overflow: hidden;
+}
+
+.headerLogo {
+    float: left;
+}
+
+.signIn {
+    float: right;
+    display: block;
+    padding: 12px;
+}
+
+/* ---------------------------------------------------------------------
+ Navigation
+------------------------------------------------------------------------ */
+
+.nav {
+    clear: both;
+}
+
+.nav > li {
+    display: block;
+    font-size: 15px;
+}
+
+.nav > li > a {
+    display: block;
+    padding: 5px 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Secondary Navigation
+------------------------------------------------------------------------ */
+
+.navSecondary > li > a {
+    display: block;
+    padding: 10px;
+}
+
+/* ---------------------------------------------------------------------
+ Site Footer
+------------------------------------------------------------------------ */
+
+.siteFooter {
+    padding: 20px;
+}
+
+.siteFooter_home {
+    padding-bottom: 40px;
+}
+
+.siteFooter_home .siteFooter-contact {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
 
 
 
