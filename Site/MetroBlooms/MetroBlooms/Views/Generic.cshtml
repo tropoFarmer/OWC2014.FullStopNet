@@ -8,6 +8,9 @@
             </div> <!-- /.grid-col -->
 
             <div class="grid-col grid-col_primary">
+                <div class="content">
+                    <h1 class="hdg hdg_1">@Model.Title</h1>
+                </div>
                 @foreach (var section in Model.Sections)
                 {
                     @Html.DisplayFor(x => section)

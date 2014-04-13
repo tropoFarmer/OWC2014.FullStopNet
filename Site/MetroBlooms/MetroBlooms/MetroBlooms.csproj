@@ -415,7 +415,6 @@
     <Content Include="Views\Partials\DisplayTemplates\ImageDisplaySection.cshtml" />
     <Content Include="Views\Partials\DisplayTemplates\IntroSection.cshtml" />
     <Content Include="Views\Partials\DisplayTemplates\QuoteSection.cshtml" />
-    <Content Include="Views\ApiTest.cshtml" />
     <Content Include="Views\Learn.cshtml" />
     <Content Include="Views\Shared\_AlohaEditor.cshtml" />
     <None Include="Web.Dev.config">
