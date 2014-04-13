@@ -6,7 +6,7 @@
             @*<a class="signIn" href="#">Sign In</a>*@
             @if (Model.UtilityLinks != null && Model.UtilityLinks.Items.Any())
             {
-
+                <a class="signIn" href="@Model.SignInLink.Url" target="@(Model.SignInLink.NewWindow ? "_blank" : "_self")">@Model.SignInLink.Title</a>
                 <ul class="navSecondary">
                     @foreach (var link in Model.UtilityLinks.Items)
                     {
@@ -23,7 +23,7 @@
                 <ul class="nav">
                     @foreach (var link in Model.MainNavigation.Items)
                     {
-                        <li><a href="@link.Url" target="@(link.NewWindow?"_blank":"_self")">@*<span class="navTag">Learn about</span>*@ @link.Title</a></li>
+                        <li><a href="@link.Url" target="@(link.NewWindow?"_blank":"_self")"> @Html.Raw(link.Title)</a></li>
                     }
                 </ul>
             }

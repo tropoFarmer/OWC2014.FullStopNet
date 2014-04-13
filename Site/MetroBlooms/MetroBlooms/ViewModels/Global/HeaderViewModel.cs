@@ -6,6 +6,7 @@ using uComponents.DataTypes.MultiUrlPicker.Dto;
 using umbraco;
 using umbraco.NodeFactory;
 using MetroBlooms.Extensions;
+using uComponents.DataTypes.UrlPicker.Dto;
 
 namespace MetroBlooms.ViewModels.Global
 {
@@ -13,12 +14,13 @@ namespace MetroBlooms.ViewModels.Global
     {
         public MultiUrlPickerState UtilityLinks { get; set; }
         public MultiUrlPickerState MainNavigation { get; set; }
-
+        public UrlPickerState SignInLink { get; set; }
         public HeaderViewModel()
         {
             var node = uQuery.GetCurrentNode();
             this.MainNavigation = this.FetchNavigationLinks(node);
             this.UtilityLinks = this.FetchUtilityLinks(node);
+            this.SignInLink = UrlPickerState.Deserialize(node.GetPropertyRecursive<string>("signInLink"));
         }
 
         private MultiUrlPickerState FetchUtilityLinks(Node nodeContext)
