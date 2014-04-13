@@ -8,7 +8,7 @@ namespace MetroBlooms.Api.RemoteApi
 {
     public class EvaluatorApi : ApiBase
     {
-        public EvaluatorApi(string userName, string password) : base(userName, password)
+        public EvaluatorApi(ApiCredentials apiCredentials) : base(apiCredentials)
         {
         }
 

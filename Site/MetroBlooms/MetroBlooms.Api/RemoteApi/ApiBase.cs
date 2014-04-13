@@ -11,10 +11,10 @@ namespace MetroBlooms.Api.RemoteApi
 {
     public abstract class ApiBase
     {
-        protected ApiBase(string userName, string password)
+        protected ApiBase(ApiCredentials apiCredentials)
         {
-            UserName = userName;
-            Password = password;
+            UserName = apiCredentials.UserName;
+            Password = apiCredentials.Password;
         }
 
         protected const string RootUrl = "http://www.metroblooms.org/api/";
