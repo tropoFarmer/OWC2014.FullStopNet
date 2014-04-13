@@ -40,6 +40,7 @@ Width: 640px+
 
 .section > .container {
     padding-top: 200px;
+    max-width: 790px;
 }
 
 .section_small {
@@ -57,6 +58,8 @@ Width: 640px+
 
 .section_left {
     text-align: left;
+    font-size: 12px;
+    min-height: 600px;
 }
 
 .section_left > .section-bg {
@@ -66,11 +69,13 @@ Width: 640px+
 .section_left > .container {
     margin: 0 0 0 auto;
     padding-left: 5%;
-    padding-right: 10%;
+    padding-right: 6%;
 }
 
 .section_right {
     text-align: right;
+    font-size: 12px;
+    min-height: 600px;
 }
 
 .section_right > .section-bg {
@@ -105,9 +110,16 @@ Width: 640px+
     width: 33.33%;
 }
 
-.section_left.section_imgFull > .container,
-.section_right.section_imgFull > .container {
+.section_left.section_imgFull .container {
+    padding-right: 22%;
     margin: 0 auto;
+    width: 100%;
+}
+
+.section_right.section_imgFull .container {
+    padding-left: 22%;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Hovering section */
