@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA6NHexgh/K0a4Laaax4jvgAAAAAACAAAAAAAQZgAAAAEAACAAAABqRPMHLZZMZrLlia4CUvd/HSDFzgJW0kx807YK1mjVwQAAAAAOgAAAAAIAACAAAABOxlzHMfNa8oQPdkNUYsbudH+dQsL0SLThaOgDXxa23IAAAAAuCyupZEIhDD4V1MoHOMsqNvHyL2U/dW29Bzd1jz5X/mjhgk/IelYcNqqx5GWVOP2+w1TP+wjT4PZTjnVnrf5stevF3T6oOFDBviG9MZfAxjhNKBUvZvxWYelGw5XFDiW2UnX0/chxt1FpoNT7BdhpYeQVHqFgDXmgDm2z100M6EAAAAByySldUgdtjx1yJ8pdX/L20qveJ6dO0e7Ro21p7/U+Vw7f2QNZDPtFqHp2eMz8uvqXn/0FHIKQkLtEaSbL8vW4</EncryptedPassword>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdCjO+uaBMEeIvuydga/eDwAAAAACAAAAAAADZgAAwAAAABAAAADVTVls1NdWAXETQJK0R/xZAAAAAASAAACgAAAAEAAAAPlveGNs0o6ew4x8XcvHM20oAAAAmVpRUIAPPiqFM2UY2sQS5MAORkiyLrzlS7eaveP2N4cyGNkGVZNlMBQAAACD+LJtN48DCc3XnP9NrRYKBgKr+g==</EncryptedPassword>
   </PropertyGroup>
   <ItemGroup>
     <AzureDBConnectionStrings Include="Data Source=tcp:u8zv7a09yn.database.windows.net,1433;Initial Catalog=fullstopnet-b-dev;User ID=fullstopnet@u8zv7a09yn;Password=73jkveKT0MR" />

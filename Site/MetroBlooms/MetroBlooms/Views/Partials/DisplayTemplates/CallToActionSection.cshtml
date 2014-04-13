@@ -21,11 +21,7 @@
 
 @Model.Alignment 
 
-@if (Model.CTA1 != null)
+@if (Model.CTA != null)
 {
-    <a href="@Model.CTA1.Url" title="@Model.CTA1.Title">@Model.CTA1.Title</a>
-}
-@if (Model.CTA2 != null)
-{
-    <a href="@Model.CTA2.Url" title="@Model.CTA2.Title">@Model.CTA1.Title</a>
+    <a href="@Model.CTA.Url" title="@Model.CTA.Title">@Model.CTA.Title</a>
 }

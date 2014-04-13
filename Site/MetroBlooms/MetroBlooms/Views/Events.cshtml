@@ -1,4 +1,5 @@
-﻿@model MetroBlooms.ViewModels.EventsViewModel
+﻿@using MetroBlooms.Utilities
+@model MetroBlooms.ViewModels.EventsViewModel
 
 <div class="contentPage">
     <div class="contentPage-bg" style="background-image:url('@Model.HeaderImage.UrlWithConstraints(1400,480)')"></div>
@@ -30,10 +31,38 @@
             </div> <!-- /.grid-col -->
 
             <div class="grid-col grid-col_primary">
-                @foreach (var evt in Model.Events)
-                {
-                    @evt.Name; @Html.DisplayFor(x => evt);
-                }
+                
+                <div class="content">
+                    <h1 class="hdg hdg_1">Events</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+                    <div class="events">
+                        <ul>
+                            @foreach (var evt in Model.Events)
+                            {
+                                <li class="js-toggleActive">
+                                    <a href="#">@evt.Name</a>
+                                    <div class="event-description">
+                                        @Html.Raw(evt.Description)
+                                        <div>
+                                            <a href="@evt.GoogleMapUrlString">@evt.LocationString</a>
+                                        </div>
+                                        <div>
+                                            <a href="@(Config.WorkshopSignupUrl+evt.Id)">
+                                                Sign Up
+                                            </a>
+                                            <a href="@(Config.WorkshopDetailsUrl + evt.Workshop_Desc_Id)">
+                                                Details
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div> <!-- /.content -->
+
+                
             </div> <!-- /.grid-col -->
         </div> <!-- /.grid -->
     </div> <!-- /.container -->

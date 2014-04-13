@@ -326,6 +326,8 @@
     <Content Include="Assets\images\btn-tl.gif" />
     <Content Include="Assets\images\circle.png" />
     <Content Include="Assets\images\content-page-background-image.jpg" />
+    <Content Include="Assets\images\events-circle.png" />
+    <Content Include="Assets\images\events-sprite.png" />
     <Content Include="Assets\images\favicon.ico" />
     <Content Include="Assets\images\footer-icon-address.png" />
     <Content Include="Assets\images\footer-icon-email.png" />

@@ -61,6 +61,14 @@ namespace MetroBlooms.Utilities
         {
             get { return GetConfigSetting<string>("siteTitle"); }
         }
+        public static string WorkshopSignupUrl
+        {
+            get { return GetConfigSetting<string>("workshopSignupUrl"); }
+        }
+        public static string WorkshopDetailsUrl
+        {
+            get { return GetConfigSetting<string>("workshopDetailsUrl"); }
+        }
 
         #region Analytics
 
