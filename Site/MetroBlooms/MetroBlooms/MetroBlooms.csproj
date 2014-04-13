@@ -278,7 +278,6 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
-    <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="ViewModels\EventsViewModel.cs" />
     <Compile Include="Controllers\ExternalController.cs" />
     <Compile Include="Controllers\GenericController.cs" />
@@ -412,6 +411,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\Events\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>
@@ -436,7 +436,7 @@
     <Content Include="Views\Learn.cshtml" />
     <Content Include="Views\Shared\_AlohaEditor.cshtml" />
     <Content Include="Views\Partials\DisplayTemplates\RichTextSection.cshtml" />
-    <Content Include="Views\Events\ListEvents.cshtml" />
+    <Content Include="Views\Events.cshtml" />
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
