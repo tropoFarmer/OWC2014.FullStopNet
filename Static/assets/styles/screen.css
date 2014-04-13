@@ -227,22 +227,64 @@ img {
 
 .btn {
     display: inline-block;
-    padding: 5px 10px;
-    border: 0 none;
-    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+    border-top: 3px solid #5086c5;
+    border-right: 3px solid #5086c5;
+    border-bottom: 3px solid #5086c5;
+    border-left: 2px solid #5086c5;
     text-decoration: none;
-    color: #ffffff;
+    color: #5086c5;
+    font-size: 16px;
     font-family: 'Architects Daughter', 'Open Sans', sans-serif;
-    background: #5086c5;
+    text-transform: uppercase;
     cursor: pointer;
+    background: transparent;
 }
 
-.btn_reverse {
+.btn:before {
+    content: '';
+    display: block;
+    height: 7px;
+    width: 5px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    background: url(../images/btn-tl.gif) no-repeat;
+}
+
+.btn:after {
+    content: '';
+    display: block;
+    height: 7px;
+    width: 5px;
+    position: absolute;
+    bottom: -7px;
+    right: -5px;
+    background: url(../images/btn-br.gif) no-repeat;
+}
+
+.btn_rev {
     color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn_rev:before {
+    background-image: url(../images/btn-rev-tl.gif);
+}
+
+.btn_rev:after {
+    background-image: url(../images/btn-rev-br.gif);
 }
 
 .btn:hover {
-    background: #10658c;
+    background: #5086c5;
+    color: #ffffff;
+}
+
+.btn_rev:hover {
+    background: #ffffff;
+    color: #333333;
 }
 
 /* ---------------------------------------------------------------------
