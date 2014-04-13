@@ -1,34 +1,51 @@
 <?php include 'includes/head.php'; ?>
 <?php include 'includes/header.php'; ?>
 
-<div class="section">
+<div class="section js-scrollSection">
     <div class="container">
         INDEX
+    </div> <!-- /.container -->
+</div> <!-- /.section -->
 
+<div class="section js-scrollSection">
+    <div class="container">
+        INDEX
+    </div> <!-- /.container -->
+</div> <!-- /.section -->
 
-        <style>
-            .contentSection {
-                height: 500px;
-                border: 1px solid #f00;
-            }
-        </style>
+<div class="section js-scrollSection">
+    <div class="container">
+        INDEX
+    </div> <!-- /.container -->
+</div> <!-- /.section -->
 
-        <div class="contentSection">
-            section 0
-        </div>
-        <div class="contentSection">
-            section 1
-        </div>
-        <div class="contentSection">
-            section 2
-        </div>
-        <div class="contentSection">
-            section 3
-        </div>
-        <div class="contentSection">
-            section 4
-        </div>
+<div class="section js-scrollSection">
+    <div class="container">
+        INDEX
+    </div> <!-- /.container -->
+</div> <!-- /.section -->
 
+<div class="section js-scrollSection">
+    <div class="container">
+        INDEX
+    </div> <!-- /.container -->
+</div> <!-- /.section -->
+
+<div class="section js-scrollSection">
+    <div class="container">
+        INDEX
+    </div> <!-- /.container -->
+</div> <!-- /.section -->
+
+<div class="section js-scrollSection">
+    <div class="container">
+        INDEX
+    </div> <!-- /.container -->
+</div> <!-- /.section -->
+
+<div class="section js-scrollSection">
+    <div class="container">
+        INDEX
     </div> <!-- /.container -->
 </div> <!-- /.section -->
 
