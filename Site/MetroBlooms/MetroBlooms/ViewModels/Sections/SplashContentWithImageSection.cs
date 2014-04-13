@@ -13,6 +13,7 @@ namespace MetroBlooms.ViewModels.Sections
         public UmbracoImage BackgroundImage { get; set; }
         public string Size { get; set; }
         public string Alignment { get; set; }
+        public string Theme { get; set; }
 
         public SplashContentWithImageSection(Node node) : base(node)
         {
@@ -23,6 +24,7 @@ namespace MetroBlooms.ViewModels.Sections
             BackgroundImage = node.GetImage("backgroundImage");
             Size = node.GetProperty<string>("Size");
             Alignment = node.GetProperty<string>("Alignment");
+            Theme = node.GetProperty<string>("Theme");
         }
     }
 }
