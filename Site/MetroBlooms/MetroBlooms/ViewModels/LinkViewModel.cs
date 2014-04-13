@@ -25,6 +25,7 @@ namespace MetroBlooms.ViewModels
             this.Url = node.Url;
             var redirectUrl = node.GetProperty<string>("redirectUrl");
             this.NewWindow = redirectUrl.IsSet();
+            this.Active = uQuery.GetCurrentNode().GetAncestorOrSelfNodes().Any(x => x.Id.Equals(node.Id));
 
         }
 
