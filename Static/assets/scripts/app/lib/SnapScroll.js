@@ -70,6 +70,9 @@ define(function(require) {
         },
 
         _scrollToTarget: function(targetIndex) {
+
+            console.log('scrolling to ', targetIndex);
+
             var $scrollTargetElements = this._$scrollTargetElements;
 
             var newScrollTop;
@@ -83,7 +86,7 @@ define(function(require) {
                 // this._currentlyVisibleTargetIndex = targetIndex;
             }
 
-            jQuery('body').stop().animate({
+            jQuery('html,body').stop().animate({
                 scrollTop: newScrollTop
             }, 1000);
         }
