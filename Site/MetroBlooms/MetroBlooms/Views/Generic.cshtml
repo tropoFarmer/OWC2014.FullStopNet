@@ -7,7 +7,20 @@
                 <ul>
                     @foreach (var link in Model.SubLinks)
                     {
-                        <li><a href="@link.Url" target="@(link.NewWindow?"_blank":"_self")">@link.Title</a></li>
+                        <li>
+                            <a href="@link.Url" target="@(link.NewWindow?"_blank":"_self")">@link.Title</a>
+                            @if (link.ChildLinks.Any())
+                            {
+
+                            <ul>
+                                @foreach (var subLink in link.ChildLinks)
+                                {
+                                    <li><a href="@subLink.Url" target="@(subLink.NewWindow ? "_blank" : "_self")">@subLink.Title</a></li>
+                                }
+                            </ul>
+                            }
+                        </li>
+
                     }
                 </ul>
             </div> <!-- /.grid-col -->

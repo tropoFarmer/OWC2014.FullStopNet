@@ -2,7 +2,6 @@
 @model MetroBlooms.ViewModels.Global.HeaderViewModel
 
 <div class="siteHeader" role="masthead">
-    <div class="container">
         <div class="headerInfo">
             @*<a class="signIn" href="#">Sign In</a>*@
             @if (Model.UtilityLinks != null && Model.UtilityLinks.Items.Any())
@@ -29,5 +28,4 @@
                 </ul>
             }
         </div>
-    </div> <!-- /.container -->
 </div> <!-- /.siteHeader -->
