@@ -1,4 +1,5 @@
-﻿using MetroBlooms.ViewModels.Home;
+﻿using MetroBlooms.Utilities;
+using MetroBlooms.ViewModels.Home;
 using umbraco;
 using umbraco.NodeFactory;
 
