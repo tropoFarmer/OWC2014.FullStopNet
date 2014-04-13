@@ -177,6 +177,10 @@ button {
     clear: both;
 }
 
+.grid-col {
+    padding: 0 20px;
+}
+
 * + .row {
     margin-top: 24px;
 }
@@ -341,6 +345,7 @@ p {
 
 .siteFooter {
     padding: 20px;
+    overflow: hidden;
 }
 
 .siteFooter_home {
