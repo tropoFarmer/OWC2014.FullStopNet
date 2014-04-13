@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MetroBlooms.Extensions;
 using MetroBlooms.ViewModels.Sections;
 using umbraco;
 using umbraco.NodeFactory;
@@ -12,6 +13,7 @@ namespace MetroBlooms.ViewModels.Generic
     {
         public string Title { get; set; }
         public string Content { get; set; }
+        public UmbracoImage HeaderImage { get; set; }
         public List<LinkViewModel> SubLinks { get; set; }
         public List<BaseSection> Sections { get; set; }
 
@@ -21,6 +23,7 @@ namespace MetroBlooms.ViewModels.Generic
 
             this.Title = contextNode.Name;
             this.Content = contextNode.GetProperty<string>("content");
+            this.HeaderImage = new UmbracoImage(contextNode.GetPropertyRecursive<string>("headerImage"));
             var linkContext = this.FetchLinkContext(contextNode);
             this.SubLinks = this.FetchSubLinks(linkContext);
             this.Sections = FetchSections(contextNode);
