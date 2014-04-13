@@ -282,6 +282,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Extensions\NodeExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\GeneralExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -290,6 +291,7 @@
     <Compile Include="Utilities\ImageProcessor\ImageFilterUtil.cs" />
     <Compile Include="Utilities\ImageProcessor\ImageResult.cs" />
     <Compile Include="Utilities\UmbracoImage.cs" />
+    <Compile Include="Utilities\Util.cs" />
     <Compile Include="ViewModels\Generic\GenericViewModel.cs" />
     <Compile Include="ViewModels\Global\FooterViewModel.cs" />
     <Compile Include="ViewModels\Global\FootViewModel.cs" />
@@ -377,6 +379,7 @@
     <Content Include="Views\Generic.cshtml" />
     <Content Include="Views\Partials\Foot.cshtml" />
     <Content Include="Views\Partials\Footer.cshtml" />
+    <Content Include="Views\Partials\GoogleAnalytics.cshtml" />
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using MetroBlooms.Api.ViewModels;
+
 using umbraco;
 using umbraco.NodeFactory;
 
@@ -28,6 +30,34 @@ namespace MetroBlooms.Utilities
         public static int UmbracoImageCache
         {
             get { return GetConfigSetting<int>("imageCacheInSeconds"); }
+        }
+
+        /// <summary>
+        /// Credentials for API
+        /// </summary>
+        public static ApiCredentials ApiCredentials
+        {
+            get
+            {
+                var userName = GetConfigSetting<string>("apiUserName");
+                var password = GetConfigSetting<string>("apiPassword");
+                return new ApiCredentials(userName, password);
+            }
+        }
+
+        public static string SiteTitle
+        {
+            get { return GetConfigSetting<string>("siteTitle"); }
+        }
+
+        public static string GoogleAnalyticsKey
+        {
+            get { return GetConfigSetting<string>("googleAnalyticsDomain"); }
+        }
+
+        public static string GoogleAnalyticsDomain
+        {
+            get { return GetConfigSetting<string>("googleAnalyticsKey"); }
         }
 
         private static T GetConfigSetting<T>(string name)

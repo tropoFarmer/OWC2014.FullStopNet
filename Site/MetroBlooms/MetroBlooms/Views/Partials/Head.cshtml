@@ -1,8 +1,41 @@
 ﻿@using MetroBlooms.Extensions
+@using MetroBlooms.Utilities
+@using MetroBlooms.ViewModels.Generic;
 @model MetroBlooms.ViewModels.Global.HeadViewModel
 
-<title>@Model.PageTitle</title>
+<head>
 
+    <!-- META DATA -->
+    <meta charset="utf-8" />
+    @if (Model.PageDescription.IsSet())
+    {
+        <meta name="description" content="@Model.PageDescription" />
+    }
+    @if (Model.PageAuthor.IsSet())
+    {
+        <meta name="author" content="@Model.PageAuthor" />
+    }
+    @if (Model.PageKeywords.IsSet())
+    {
+        <meta name="keywords" content="@Model.PageKeywords" />
+    }
 
-@if(Model.PageDescription.IsSet()){<meta name="description" content="@Model.PageDescription" />}
-@if (Model.PageAuthor.IsSet()){<meta name="author" content="@Model.PageAuthor" />}
+    <!-- SEO -->
+    <meta property="og:title" content="@Model.PageTitle - @Config.SiteTitle" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="@Util.HomeUrl()" />
+    <meta property="og:image" content="@Url.Absolute("~/assets/REPLACE_ME.jpg")" />
+    <meta property="og:site_name" content="@Config.SiteTitle" />
+    <meta property="og:description" content="@Model.PageDescription" />
+
+    <title>@Model.PageTitle - @Config.SiteTitle</title>
+
+    <!-- ICONS -->
+    <link href="~/assets/site/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="cssBundle">
+    
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="jsBundle"></script>
+</head>
