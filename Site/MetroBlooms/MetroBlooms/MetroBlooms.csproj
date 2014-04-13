@@ -372,6 +372,8 @@
   <ItemGroup>
     <Folder Include="Assets\" />
     <Folder Include="Views\MacroPartials\" />
+    <Folder Include="Views\Shared\DisplayTemplates\" />
+    <Folder Include="Views\Shared\EditorTemplates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -382,8 +384,6 @@
     <Content Include="Views\MainLayout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Partials\Head.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\Object.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Object.cshtml" />
     <Content Include="Views\Partials\Header.cshtml" />
     <Content Include="Views\Generic.cshtml" />
     <Content Include="Views\Partials\Foot.cshtml" />
