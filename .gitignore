@@ -164,3 +164,7 @@ $RECYCLE.BIN/
 .DS_Store
 
 
+/Site/MetroBlooms/MetroBlooms.Api/bin
+/Site/MetroBlooms/packages
+/Site/MetroBlooms/MetroBlooms.v12.suo
+/Site/MetroBlooms/packages

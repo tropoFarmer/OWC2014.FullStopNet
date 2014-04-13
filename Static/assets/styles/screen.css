@@ -113,6 +113,12 @@ textarea {
  Base Styles
 ------------------------------------------------------------------------ */
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     color: #333333;
     font-family: 'Open Sans', sans-serif;
@@ -122,13 +128,37 @@ body {
 
 a {
     color: inherit;
+    text-decoration: none;
+}
+
+a, button {
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+input,
+button {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* ---------------------------------------------------------------------
  Layout
 ------------------------------------------------------------------------ */
 
+.site {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.siteMain {
+    padding-bottom: 50px;
+}
+
 .container {
+    max-width: 1020px;
     margin: 0 auto;
 }
 
@@ -165,6 +195,13 @@ a {
 
 .siteFooter {
     padding: 20px;
+}
+
+.siteFooter_home {
+    padding-bottom: 40px;
+}
+
+.siteFooter_home .siteFooter-contact {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -202,15 +239,72 @@ a {
 .btn {
     display: inline-block;
     padding: 5px 10px;
+    border: 0 none;
     border-radius: 6px;
     text-decoration: none;
     color: #ffffff;
-    background: #bada55;
+    background: #1092c8;
+    cursor: pointer;
 }
 
 .btn_lg {
     padding: 8px 12px;
     font-size: 20px;
+}
+
+.btn:hover {
+    background: #10658c;
+}
+
+/* ---------------------------------------------------------------------
+ Navigation
+------------------------------------------------------------------------ */
+
+.nav {
+
+}
+
+.nav-list {
+    font-size: 0;
+}
+
+.nav-list > li {
+    display: block;
+    font-size: 15px;
+}
+
+.nav-list > li > a {
+    padding: 5px 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Sections
+------------------------------------------------------------------------ */
+
+.section {
+    background-size: contain;
+}
+
+/* ---------------------------------------------------------------------
+ Pane
+------------------------------------------------------------------------ */
+
+.pane {
+    background: #ffffff;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+/* ---------------------------------------------------------------------
+ Next section
+------------------------------------------------------------------------ */
+
+.next {
+    text-align: center;
+}
+
+.next-link {
+    display: inline-block;
+    text-decoration: none;
 }
 
 /* ---------------------------------------------------------------------

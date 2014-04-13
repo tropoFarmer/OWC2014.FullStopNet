@@ -3,14 +3,15 @@
     Layout = null;
 }
 
-<html>
-<head>
-    @Html.Action("Head","Content")
-</head>
-<body>
-    @Html.Action("Header","Content")
-    @RenderBody()
-    @Html.Action("Footer", "Content")
-    @Html.Action("Foot", "Content")
-</body>
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+    
+    @Html.Action("Head", "Content")
+
+    <body>
+        @Html.Action("Header", "Content")
+        @RenderBody()
+        @Html.Action("Footer", "Content")
+        @Html.Action("Foot", "Content")
+    </body>
 </html>

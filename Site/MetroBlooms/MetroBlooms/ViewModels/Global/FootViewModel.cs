@@ -1,20 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using uComponents.DataTypes.MultiUrlPicker.Dto;
+﻿using MetroBlooms.Utilities;
 using umbraco;
 using umbraco.NodeFactory;
-using MetroBlooms.Extensions;
 
 namespace MetroBlooms.ViewModels.Global
 {
     public class FootViewModel
     {
+        public static string GoogleAnalyticsKey { get; set; }
+        public static string GoogleAnalyticsDomain { get; set; }
 
         public FootViewModel()
         {
-            var node = uQuery.GetCurrentNode();
+            Node node = uQuery.GetCurrentNode();
+            GoogleAnalyticsKey = Config.GoogleAnalyticsKey;
+            GoogleAnalyticsDomain = Config.GoogleAnalyticsDomain;
         }
     }
 }

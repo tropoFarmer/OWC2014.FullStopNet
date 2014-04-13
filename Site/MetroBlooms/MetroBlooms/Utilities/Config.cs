@@ -45,6 +45,21 @@ namespace MetroBlooms.Utilities
             }
         }
 
+        public static string SiteTitle
+        {
+            get { return GetConfigSetting<string>("siteTitle"); }
+        }
+
+        public static string GoogleAnalyticsKey
+        {
+            get { return GetConfigSetting<string>("googleAnalyticsDomain"); }
+        }
+
+        public static string GoogleAnalyticsDomain
+        {
+            get { return GetConfigSetting<string>("googleAnalyticsKey"); }
+        }
+
         private static T GetConfigSetting<T>(string name)
         {
             if (_settingsNode == null) return default(T);
