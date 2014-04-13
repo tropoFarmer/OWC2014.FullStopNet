@@ -1,8 +1,18 @@
 ﻿@model MetroBlooms.ViewModels.Generic.GenericViewModel
 
-@foreach (var section in Model.Sections)
-{
-    <div>
-        @Html.DisplayFor(x => section)
-    </div>
-}
+<div class="section">
+    <div class="container">
+        <div class="grid">
+            <div class="grid-col grid-col_secondary">
+                Left Col
+            </div> <!-- /.grid-col -->
+
+            <div class="grid-col grid-col_primary">
+                @foreach (var section in Model.Sections)
+                {
+                    @Html.DisplayFor(x => section)
+                }
+            </div> <!-- /.grid-col -->
+        </div> <!-- /.grid -->
+    </div> <!-- /.container -->
+</div> <!-- /.section -->

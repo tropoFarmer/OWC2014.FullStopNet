@@ -280,6 +280,7 @@
     <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\GenericController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Extensions\NodeExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\GeneralExtensions.cs" />
@@ -292,6 +293,7 @@
     <Compile Include="Utilities\ImageProcessor\ImageResult.cs" />
     <Compile Include="Utilities\SectionFactory.cs" />
     <Compile Include="Utilities\UmbracoImage.cs" />
+    <Compile Include="Utilities\UmbracoPropertyString.cs" />
     <Compile Include="Utilities\Util.cs" />
     <Compile Include="ViewModels\Generic\GenericViewModel.cs" />
     <Compile Include="ViewModels\Global\FooterViewModel.cs" />
@@ -312,6 +314,19 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Assets\images\favicon.ico" />
+    <Content Include="Assets\images\logo.png" />
+    <Content Include="Assets\scripts\app\App.js" />
+    <Content Include="Assets\scripts\app\lib\ActiveToggler.js" />
+    <Content Include="Assets\scripts\app\lib\ResponsiveTriggers.js" />
+    <Content Include="Assets\scripts\bootstrap.js" />
+    <Content Include="Assets\scripts\vendor\jquery.min.js" />
+    <Content Include="Assets\scripts\vendor\requirejs\domReady.js" />
+    <Content Include="Assets\scripts\vendor\requirejs\require.min.js" />
+    <Content Include="Assets\scripts\vendor\requirejs\text.js" />
+    <Content Include="Assets\styles\screen-large.css" />
+    <Content Include="Assets\styles\screen-medium.css" />
+    <Content Include="Assets\styles\screen.css" />
     <Content Include="Config\splashes\booting.aspx" />
     <Content Include="Config\splashes\noNodes.aspx" />
     <Content Include="default.aspx" />
@@ -356,12 +371,22 @@
     <Content Include="Config\umbracoSettings.config" />
     <Content Include="Config\UrlRewriting.config" />
     <Content Include="Config\xsltExtensions.config" />
+    <Content Include="Assets\fonts\.keep" />
+    <Content Include="Assets\images\.keep" />
+    <Content Include="Assets\uploads\.keep" />
     <None Include="Properties\PublishProfiles\Sandbox - FE1 %28Ferenc%29.pubxml" />
     <None Include="Properties\PublishProfiles\Sandbox - FE2 %28Jen%29.pubxml" />
     <None Include="Properties\PublishProfiles\Sandbox - FE3 %28Matt%29.pubxml" />
     <None Include="Properties\PublishProfiles\Sandbox - FE4 %28Ryan%29.pubxml" />
     <None Include="Properties\PublishProfiles\Prod.pubxml" />
-    <Content Include="Web.config" />
+    <Content Include="media\1001\cached\0240Right.png" />
+    <Content Include="media\1001\Raingarden-pic.jpg" />
+    <Content Include="media\1001\Raingarden-pic_500x324.jpg" />
+    <Content Include="media\1001\Raingarden-pic_thumb.jpg" />
+    <Content Include="media\dummy.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
@@ -369,7 +394,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>
@@ -381,8 +405,6 @@
     <Content Include="Views\MainLayout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Partials\Head.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\Object.cshtml" />
-    <Content Include="Views\Shared\EditorTemplates\Object.cshtml" />
     <Content Include="Views\Partials\Header.cshtml" />
     <Content Include="Views\Generic.cshtml" />
     <Content Include="Views\Partials\Foot.cshtml" />

@@ -1,10 +1,16 @@
-﻿@model MetroBlooms.ViewModels.Sections.CallToActionSection
+﻿@using MetroBlooms.Extensions
+@model MetroBlooms.ViewModels.Sections.CallToActionSection
 
 @if (Model.Title != null)
 {
-    @Model.Title
+    <div class="@Html.EditableClass()" @Html.EditableData(Model.Title)>
+        @Model.Title
+    </div>
 }
-@Html.Raw(Model.Text)
+
+<div class="@Html.EditableClass()" @Html.EditableData(Model.Text)>
+    @Html.Raw(Model.Text)
+</div>
 
 @Model.Alignment 
 

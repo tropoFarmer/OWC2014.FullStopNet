@@ -4,7 +4,6 @@ define(function(require) {
     var jQuery = require('jQuery');
 
     var ResponsiveTriggers = require('app/lib/ResponsiveTriggers');
-    var SnapScroll = require('app/lib/SnapScroll');
 
     // singletons with no interface
     require('app/lib/ActiveToggler');
@@ -26,9 +25,6 @@ define(function(require) {
                 maxWidth: Infinity
             }
         ]);
-
-
-        var homePageSnapScroll = new SnapScroll('.contentSection');
 
     };
 

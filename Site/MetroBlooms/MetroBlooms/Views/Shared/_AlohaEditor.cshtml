@@ -49,6 +49,9 @@
                     }
                 ],
                 exclude: ['strong', 'emphasis', 'strikethrough']
+            },
+            sidebar: {
+                 disabled: true
             }
         };
     })(window);
@@ -70,6 +73,15 @@
 								common/image"></script>
 
 <link rel="stylesheet" href="http://cdn.aloha-editor.org/latest/css/aloha.css" type="text/css">
+<style type="text/css">
+    .aloha-editable-highlight {
+        outline: none !important;
+    }
+
+        .aloha-editable-highlight:hover {
+            outline: #FFE767 solid 5px !important;
+        }
+</style>
 <script>
     Aloha.ready(function () {
         Aloha.require(['ui/ui', 'ui/button'], function(Ui, Button) {

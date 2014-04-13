@@ -1,0 +1,420 @@
+/* ---------------------------------------------------------------------
+Original Author: Fullstop Net (Overnight Website Challenge 2014)
+
+Target Browsers: All
+Media Type: Screen, Projection
+Width: All Sizes
+------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* Always show a vertical scrollbar, even when there is no scrolling */
+html {
+    overflow-y: scroll;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ HTML5 Block / Inline Block declarations
+------------------------------------------------------------------------ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+audio, canvas, video {
+    display: inline-block;
+}
+
+/* ---------------------------------------------------------------------
+ Form Reset Styles
+------------------------------------------------------------------------ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------------------------------------
+ Base Styles
+------------------------------------------------------------------------ */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a, button {
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+input,
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ Layout
+------------------------------------------------------------------------ */
+
+.site {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.siteMain {
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: block;
+    padding: 24px 0;
+}
+
+.grid:before,
+.grid:after {
+    content: ' ';
+    display: table;
+}
+
+.grid:after {
+    clear: both;
+}
+
+.grid-col {
+    padding: 0 20px;
+}
+
+* + .row {
+    margin-top: 24px;
+}
+
+/* ---------------------------------------------------------------------
+ Headings
+------------------------------------------------------------------------ */
+
+.hdg {
+    font-family: 'Architects Daughter', 'Open Sans', sans-serif;
+}
+
+.hdg_1 {
+    font-size: 48px;
+}
+
+.hdg_2 {
+    font-size: 36px;
+}
+
+.hdg_3 {
+    font-size: 26px;
+}
+
+.hdg_4 {
+    font-size: 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Buttons
+------------------------------------------------------------------------ */
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 0 none;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #1092c8;
+    cursor: pointer;
+}
+
+.btn_lg {
+    padding: 8px 12px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background: #10658c;
+}
+
+/* ---------------------------------------------------------------------
+ Sections
+------------------------------------------------------------------------ */
+
+.section {
+    background-size: contain;
+}
+
+/* ---------------------------------------------------------------------
+ Pane
+------------------------------------------------------------------------ */
+
+.pane {
+    background: #ffffff;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+/* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+
+.blocks {
+    overflow: hidden;
+}
+
+/* ---------------------------------------------------------------------
+ Next section
+------------------------------------------------------------------------ */
+
+.next {
+    text-align: center;
+}
+
+.next-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------
+ Content Layout
+------------------------------------------------------------------------ */
+
+.content {
+    overflow: hidden;
+}
+
+.content-full {
+    width: 100%;
+}
+
+.content-large {
+    width: 66.66%;
+}
+
+.content-medium {
+    width: 50%;
+}
+
+.content-small {
+    width: 33.33%;
+}
+
+.content-left {
+    float: left;
+}
+
+.content-right {
+    float: right;
+}
+
+/* ---------------------------------------------------------------------
+ Content tags
+------------------------------------------------------------------------ */
+
+.content p {
+    margin-bottom: 1em;
+}
+
+.content img {
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+ Content Images
+------------------------------------------------------------------------ */
+
+
+
+/* ---------------------------------------------------------------------
+ Site Header
+------------------------------------------------------------------------ */
+
+.siteHeader {
+    width: 100%;
+}
+
+.siteHeader:before,
+.siteHeader:after {
+    content: ' ';
+    display: table;
+}
+
+.siteHeader:after {
+    clear: both;
+}
+
+* + .row {
+    margin-top: 24px;
+}
+
+.headerInfo {
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.headerLower {
+    overflow: hidden;
+}
+
+.headerLogo {
+    float: left;
+}
+
+.signIn {
+    float: right;
+    display: block;
+    padding: 12px;
+}
+
+/* ---------------------------------------------------------------------
+ Navigation
+------------------------------------------------------------------------ */
+
+.nav {
+    clear: both;
+}
+
+.nav > li {
+    display: block;
+    font-size: 15px;
+}
+
+.nav > li > a {
+    display: block;
+    padding: 5px 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Secondary Navigation
+------------------------------------------------------------------------ */
+
+.navSecondary > li > a {
+    display: block;
+    padding: 10px;
+}
+
+/* ---------------------------------------------------------------------
+ Site Footer
+------------------------------------------------------------------------ */
+
+.siteFooter {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.siteFooter_home {
+    padding-bottom: 40px;
+}
+
+.siteFooter_home .siteFooter-contact {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+
