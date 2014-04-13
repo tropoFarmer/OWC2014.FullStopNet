@@ -196,15 +196,15 @@ img {
 ------------------------------------------------------------------------ */
 
 .hdg {
-
+    margin-bottom: .6em;
 }
 
 .hdg_1 {
-    font-size: 48px;
+    font-size: 45px;
 }
 
 .hdg_2 {
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .hdg_3 {
@@ -213,6 +213,12 @@ img {
 
 .hdg_4 {
     font-size: 20px;
+}
+
+.hdg_arch {
+    font-size: 20px;
+    font-family: 'Architects Daughter', 'Open Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 /* ---------------------------------------------------------------------
@@ -240,19 +246,26 @@ img {
 }
 
 /* ---------------------------------------------------------------------
- Sections
+ Home Sections
 ------------------------------------------------------------------------ */
 
 .section {
-    min-height: 700px;
     position: relative;
+    text-align: center;
+}
+
+.section p {
+    line-height: 1.625;
+}
+
+.section p + p {
+    margin-top: 1em;
 }
 
 .section-bg {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     bottom: 0;
     z-index: 0;
     background: no-repeat #ffffff;
@@ -260,12 +273,9 @@ img {
 }
 
 .section > .container {
+    padding: 50px 20px;
     position: relative;
     z-index: 5;
-}
-
-.section_small {
-    min-height: 275px;
 }
 
 /* Color Selection */
@@ -285,28 +295,10 @@ img {
     background-color: #5086c5;
 }
 
-/* Alignment */
-.section_center {
-    text-align: center;
+.section_imgSmall,
+.section_imgMedium {
+    color: #ffffff;
 }
-
-.section_left {
-    text-align: left;
-}
-
-.section_right {
-    text-align: right;
-}
-
-/* Image Width */
-.section_imgSmall .section-bg {
-
-}
-
-.section_imgMedium .section-bg {
-
-}
-
 
 /* ---------------------------------------------------------------------
  Pane
@@ -378,15 +370,13 @@ img {
     margin-bottom: 1em;
 }
 
-.content img {
-    width: 100%;
-}
-
 /* ---------------------------------------------------------------------
  Content Images
 ------------------------------------------------------------------------ */
 
-
+.content img {
+    width: 100%;
+}
 
 /* ---------------------------------------------------------------------
  Site Header
@@ -473,6 +463,62 @@ img {
 .navSecondary > li > a {
     display: block;
     padding: 12px 10px;
+}
+
+/* ---------------------------------------------------------------------
+ Column Navigation
+------------------------------------------------------------------------ */
+
+.colNav {
+    font-size: 15px;
+}
+
+.colNav ul > li > a {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 5px;
+    font-weight: lighter;
+}
+
+.colNav ul > li > a:hover {
+    font-weight: normal;
+}   
+
+.colNav ul > li.active > a {
+    font-weight: normal;
+    color: #403f37;
+    border-bottom: 2px solid #5086c5;
+}
+
+
+/* ---------------------------------------------------------------------
+ Column Sub Navigation
+------------------------------------------------------------------------ */
+
+.colNav ul > li.active .colNav-sub ul {
+    display: block;
+}
+
+.colNav-sub ul {
+    display: none;
+    padding: 7px 0 15px 0;
+    font-size: 13px;
+    border-bottom: 1px solid #c7c6b9;
+}
+
+.colNav-sub ul > li > a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px 0 15px;
+    font-weight: lighter;
+}
+
+.colNav-sub ul > li > a:hover {
+    font-weight: normal;
+}   
+
+.colNav-sub ul > li.active > a {
+    font-weight: normal;
 }
 
 /* ---------------------------------------------------------------------
