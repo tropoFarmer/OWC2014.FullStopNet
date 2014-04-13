@@ -1,16 +1,18 @@
-﻿@model MetroBlooms.ViewModels.Sections.ImageDisplaySection
+﻿@using System
+@using System.Collections.Generic
+@using System.Linq
+@model MetroBlooms.ViewModels.Sections.ImageDisplaySection
 
-@if (Model.Image1 != null)
-{
-    <img src="@Model.Image1.Url" alt="@Model.Image1.Alt" />
+@{
+    var images = new[] { Model.Image1, Model.Image2, Model.Image3 }.WhereNotNull();
+    var blockClass = string.Format("blocks_{0}up", images.Count());
 }
+<div class="content">
+    <div class="blocks @blockClass">
+        @foreach (var image in images)
+        {
+            <div><img src="@image.Url" alt="@image.Alt" /></div>
+        }
+    </div> <!-- /.blocks -->
+</div>
 
-@if (Model.Image2 != null)
-{
-    <img src="@Model.Image2.Url" alt="@Model.Image2.Alt" />
-}
-
-@if (Model.Image3 != null)
-{
-    <img src="@Model.Image3.Url" alt="@Model.Image3.Alt" />
-}
