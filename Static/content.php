@@ -6,7 +6,12 @@
         <div class="grid">
             <div class="grid-col grid-col_secondary">
                 <div class="colNav">
-                    left
+                    <ul>
+                        <li class="active"><a href="#">Success Stories</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#">Garden Map</a></li>
+                    </ul>
                 </div>
             </div> <!-- /.grid-col -->
             <div class="grid-col grid-col_primary">
