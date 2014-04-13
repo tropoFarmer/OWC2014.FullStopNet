@@ -3,7 +3,7 @@ if (!isset($footerType)) {
     $footerType = '';
 }
 ?>
-<div class="site home">
+<div class="site">
     <div class="siteHeader" role="masthead">
         <div class="headerInfo">
             <a class="signIn" href="#">Sign In</a>

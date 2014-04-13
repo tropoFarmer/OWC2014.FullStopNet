@@ -625,7 +625,7 @@ img {
 .events > ul {
 }
 
-.events > ul > li a {
+.events > ul > li .event-heading {
     display: block;
     height: 90px;
     position: relative;
@@ -636,7 +636,7 @@ img {
     position: relative;
 }
 
-.events > ul > li.active a {
+.events > ul > li.active .event-heading {
     color: #ffffff;
     background-color: #5086c5;
 }
@@ -647,7 +647,8 @@ img {
 
 
 
-.events > ul > li:before {
+.events > ul > li .date {
+    display: inline-block;
     position: absolute;
     width: 50px;
     height: 50px;
@@ -655,11 +656,18 @@ img {
     top: 0;
     left: 0;
 
+    padding-top: 12px;
+
     margin-top: 22px;
     margin-left: 60px;
 
+    font-family: 'Architects Daughter', 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+
     background: url('../images/events-circle.png') 0 0 no-repeat;
-    content: '';
+
+    z-index: 1;
 }
 
 
@@ -683,11 +691,32 @@ img {
     background-position: -50px -50px;
 }
 
+.events > ul > li .address {
+    float: right;
+    width: 200px;
+    margin-left: 40px;
+}
+
+.events > ul > li .address h4 {
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #5086c5;
+}
+
 .event-description {
     display: none;
 
     padding: 20px 80px;
 
+}
+
+.clearfix {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
 /* ---------------------------------------------------------------------

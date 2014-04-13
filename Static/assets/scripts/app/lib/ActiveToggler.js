@@ -3,22 +3,23 @@ define(function(require) {
 
     var jQuery = require('jQuery');
 
-    var TARGET_SELECTOR = '.js-toggleActive';
+    var TARGET_SELECTOR = '.js-toggleActive-target';
+    var ACTIVATOR_SELECTOR = '.js-toggleActive-activator';
     var ACTIVE_CLASS = 'active';
 
     var ActiveToggler = {
         init: function() {
-            jQuery(TARGET_SELECTOR).on('click', this._toggleActive.bind(this));
+            jQuery(ACTIVATOR_SELECTOR).on('click', this._toggleActive.bind(this));
         },
 
         _toggleActive: function(e) {
             e.preventDefault();
 
-            var $currentTarget = jQuery(e.currentTarget);
-            if ($currentTarget.hasClass(ACTIVE_CLASS) === true) {
-                $currentTarget.removeClass(ACTIVE_CLASS);
+            var $elementToToggle = jQuery(e.currentTarget).closest(TARGET_SELECTOR);
+            if ($elementToToggle.hasClass(ACTIVE_CLASS) === true) {
+                $elementToToggle.removeClass(ACTIVE_CLASS);
             } else {
-                $currentTarget.addClass(ACTIVE_CLASS);
+                $elementToToggle.addClass(ACTIVE_CLASS);
             }
         }
     };

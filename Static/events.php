@@ -10,38 +10,63 @@
             
             <div class="events">
                 <ul>
-                    <li class="js-toggleActive">
-                        <a href="#">Event Title Here</a>
+                    <li class="js-toggleActive-target">
+                        <div class="event-heading js-toggleActive-activator">
+                            <div class="date">DEC <br />12</div>
+                            <a href="#">Event Title Here</a>
+                        </div>
                         <div class="event-description">
                             Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  
                         </div>
                     </li>
-                    <li class="js-toggleActive">
-                        <a href="#">Event Title Here</a>
+                    <li class="js-toggleActive-target">
+                        <div class="event-heading js-toggleActive-activator">
+                            <div class="date">DEC <br />12</div>
+                            <a href="#">Event Title Here</a>
+                        </div>
+                        <div class="event-description">
+                            <div class="address">
+                                <h4 class="hdg_4">Address</h4>
+                                1234 My Street
+                                My City, Some State
+                                12345
+                            </div>
+                            Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+                    <li class="js-toggleActive-target">
+                        <div class="event-heading js-toggleActive-activator">
+                            <div class="date">DEC <br />12</div>
+                            <a href="#">Event Title Here</a>
+                        </div>
                         <div class="event-description">
                             Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  
                         </div>
                     </li>
-                    <li class="js-toggleActive">
-                        <a href="#">Event Title Here</a>
+                    <li class="js-toggleActive-target">
+                        <div class="event-heading js-toggleActive-activator">
+                            <div class="date">DEC <br />12</div>
+                            <a href="#">Event Title Here</a>
+                        </div>
                         <div class="event-description">
                             Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  
                         </div>
                     </li>
-                    <li class="js-toggleActive">
-                        <a href="#">Event Title Here</a>
+                    <li class="js-toggleActive-target">
+                        <div class="event-heading js-toggleActive-activator">
+                            <div class="date">DEC <br />12</div>
+                            <a href="#">Event Title Here</a>
+                        </div>
                         <div class="event-description">
                             Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  
                         </div>
                     </li>
-                    <li class="js-toggleActive">
-                        <a href="#">Event Title Here</a>
-                        <div class="event-description">
-                            Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  
+                    <li class="js-toggleActive-target">
+                        <div class="event-heading js-toggleActive-activator">
+                            <div class="date">DEC <br />12</div>
+                            <a href="#">Event Title Here</a>
                         </div>
-                    </li>
-                    <li class="js-toggleActive">
-                        <a href="#">Event Title Here</a>
                         <div class="event-description">
                             Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet.  
                         </div>
