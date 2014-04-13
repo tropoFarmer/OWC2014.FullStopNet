@@ -1,6 +1,9 @@
-﻿@model MetroBlooms.ViewModels.Sections.IntroSection
+﻿@using MetroBlooms.Extensions
+@model MetroBlooms.ViewModels.Sections.IntroSection
 
-@Model.Title
+<div class="@Html.EditableClass()" @Html.EditableData(Model.Title)>
+    @Html.Raw(Model.Title)
+</div>
 
 @Model.Alignment
 
