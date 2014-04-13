@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using MetroBlooms.Api.ViewModels;
-
+using MetroBlooms.Extensions;
 using umbraco;
 using umbraco.BusinessLogic;
 using umbraco.NodeFactory;
@@ -44,6 +44,16 @@ namespace MetroBlooms.Utilities
                 var password = GetConfigSetting<string>("apiPassword");
                 var rootApiUrl = GetConfigSetting<string>("rootApiUrl");
                 return new ApiCredentials(userName, password, rootApiUrl);
+            }
+        }
+
+        public static string[] NonContentAliases
+        {
+            get
+            {
+                var aliasString = GetConfigSetting<string>("non-ContentAliases");
+                if (!aliasString.IsSet()) return new string[0];
+                return aliasString.Split(',');
             }
         }
 
