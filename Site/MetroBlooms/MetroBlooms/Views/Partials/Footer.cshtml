@@ -2,25 +2,31 @@
 @model MetroBlooms.ViewModels.Global.FooterViewModel
 
 <div class="siteFooter" role="contentinfo">
+    
+    <!-- Fixed footer -->
     <div class="siteFooter-contact">
         <div class="container">
-            <div class="footerFirst">
-                How Can I Help?
-            </div>
-            <div class="footerLast">
-                <a class="btn" target="@(Model.GetInvolvedLink.NewWindow ? "_blank" : "" )" href="@Model.GetInvolvedLink.Url">@Model.GetInvolvedLink.Title</a>
-            </div>
+            <a target="@(Model.GetInvolvedLink.NewWindow ? "_blank" : "" )" href="@Model.GetInvolvedLink.Url">
+                <ul>
+                    <li>How Can I Help?</li>
+                    <li class="footerBtn">
+                        @Model.GetInvolvedLink.Title
+                </li>
+            </ul>
+        </a>
         </div> <!-- /.container -->
-    </div>
+    </div> <!-- /Fixed Footer -->
+
     <div class="siteFooter-links">
         <div class="container">
-            <div>@Html.Raw(Model.Address.Replace(Environment.NewLine, "<br/>"))</div>
-            <div>@Model.Phone</div>
-            <div>@Model.Email</div>
-            <div>© @DateTime.Now.Year Metro Blooms</div>
-            <div>
-                <a target="@(Model.GetInvolvedLink.NewWindow ? "_blank" : "" )" href="@Model.PrivacyPolicy.Url">@Model.PrivacyPolicy.Title</a>
-            </div>
+            <ul>
+                <li class="address">@Html.Raw(Model.Address.Replace(Environment.NewLine, "<br/>"))</li>
+                <li class="phone">@Model.Phone</li>
+                <li class="email">@Model.Email</li>
+                <li>&copy; @DateTime.Now.Year Metro Blooms</li>
+                <li class="privacy"><a target="@(Model.GetInvolvedLink.NewWindow ? "_blank" : "" )" href="@Model.PrivacyPolicy.Url">@Model.PrivacyPolicy.Title</a></li>
+            </ul>
         </div> <!-- /.container -->
     </div>
+
 </div>

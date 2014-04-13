@@ -325,6 +325,12 @@
     <Content Include="Assets\images\btn-tl.gif" />
     <Content Include="Assets\images\content-page-background-image.jpg" />
     <Content Include="Assets\images\favicon.ico" />
+    <Content Include="Assets\images\home\1.jpg" />
+    <Content Include="Assets\images\home\2.jpg" />
+    <Content Include="Assets\images\home\3.jpg" />
+    <Content Include="Assets\images\home\4.jpg" />
+    <Content Include="Assets\images\home\5.jpg" />
+    <Content Include="Assets\images\home\6.jpg" />
     <Content Include="Assets\images\logo.png" />
     <Content Include="Assets\images\test.jpg" />
     <Content Include="Assets\scripts\app\App.js" />
@@ -389,11 +395,6 @@
     <None Include="Properties\PublishProfiles\Sandbox - FE3 %28Matt%29.pubxml" />
     <None Include="Properties\PublishProfiles\Sandbox - FE4 %28Ryan%29.pubxml" />
     <None Include="Properties\PublishProfiles\Prod.pubxml" />
-    <Content Include="media\1001\cached\0240Right.png" />
-    <Content Include="media\1001\Raingarden-pic.jpg" />
-    <Content Include="media\1001\Raingarden-pic_500x324.jpg" />
-    <Content Include="media\1001\Raingarden-pic_thumb.jpg" />
-    <Content Include="media\dummy.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
