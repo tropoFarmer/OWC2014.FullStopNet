@@ -1,0 +1,24 @@
+﻿@using MetroBlooms.Extensions
+@model MetroBlooms.ViewModels.Sections.CallToActionSection
+
+@if (Model.Title != null)
+{
+    <div class="@Html.EditableClass()" @Html.EditableData(Model.Title)>
+        @Model.Title
+    </div>
+}
+
+<div class="@Html.EditableClass()" @Html.EditableData(Model.Text)>
+    @Html.Raw(Model.Text)
+</div>
+
+@Model.Alignment 
+
+@if (Model.CTA1 != null)
+{
+    <a href="@Model.CTA1.Url" title="@Model.CTA1.Title">@Model.CTA1.Title</a>
+}
+@if (Model.CTA2 != null)
+{
+    <a href="@Model.CTA2.Url" title="@Model.CTA2.Title">@Model.CTA1.Title</a>
+}

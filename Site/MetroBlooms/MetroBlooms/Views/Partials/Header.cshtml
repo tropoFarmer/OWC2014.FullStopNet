@@ -1,14 +1,33 @@
 ﻿@using MetroBlooms.Extensions
 @model MetroBlooms.ViewModels.Global.HeaderViewModel
 
-@if(Model.MainNavigation != null && Model.MainNavigation.Items.Any()){
-<nav>
-    <ul>
-        @foreach(var link in Model.MainNavigation.Items){
-        <li>
-            <a href="@link.Url" target="@(link.NewWindow?"_blank":"_self")">@link.Title</a>
-        </li>
-        }
-    </ul>
-</nav>
-}
+<div class="siteHeader" role="masthead">
+    <div class="container">
+        <div class="headerInfo">
+            @*<a class="signIn" href="#">Sign In</a>*@
+            @if (Model.UtilityLinks != null && Model.UtilityLinks.Items.Any())
+            {
+
+                <ul class="navSecondary">
+                    @foreach (var link in Model.UtilityLinks.Items)
+                    {
+                        <li><a href="@link.Url" target="@(link.NewWindow?"_blank":"_self")">@link.Title</a></li>
+                    }
+                </ul>
+            }
+        </div>
+        <div class="headerLower">
+            <a class="headerLogo" href="/"><img src="assets/images/logo.png" alt="Metro Blooms" /></a>
+            @if (Model.UtilityLinks != null && Model.UtilityLinks.Items.Any())
+            {
+
+                <ul class="nav">
+                    @foreach (var link in Model.MainNavigation.Items)
+                    {
+                        <li><a href="@link.Url" target="@(link.NewWindow?"_blank":"_self")">@*<span class="navTag">Learn about</span>*@ @link.Title</a></li>
+                    }
+                </ul>
+            }
+        </div>
+    </div> <!-- /.container -->
+</div> <!-- /.siteHeader -->

@@ -5,6 +5,7 @@ using System.Linq;
 using MetroBlooms.Api.ViewModels;
 
 using umbraco;
+using umbraco.BusinessLogic;
 using umbraco.NodeFactory;
 
 namespace MetroBlooms.Utilities
@@ -41,7 +42,8 @@ namespace MetroBlooms.Utilities
             {
                 var userName = GetConfigSetting<string>("apiUserName");
                 var password = GetConfigSetting<string>("apiPassword");
-                return new ApiCredentials(userName, password);
+                var rootApiUrl = GetConfigSetting<string>("rootApiUrl");
+                return new ApiCredentials(userName, password, rootApiUrl);
             }
         }
 
@@ -93,6 +95,16 @@ namespace MetroBlooms.Utilities
         {
             if (_settingsNode == null) return default(T);
             return _settingsNode.GetProperty<T>(name);
+        }
+
+        public static bool IsUmbracoUserLoggedIn
+        {
+            get
+            {
+                var user = User.GetCurrent();
+                var isAdmin = user != null;
+                return isAdmin;
+            }
         }
     }
 }

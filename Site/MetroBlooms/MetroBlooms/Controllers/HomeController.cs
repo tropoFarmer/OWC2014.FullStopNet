@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
+using MetroBlooms.ViewModels;
 using MetroBlooms.ViewModels.Home;
 
 using umbraco;
@@ -19,5 +20,7 @@ namespace MetroBlooms.Controllers
 
             return View(viewModel);
         }
+
+
     }
 }

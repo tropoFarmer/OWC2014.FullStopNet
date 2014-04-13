@@ -1,7 +1,11 @@
-﻿@model MetroBlooms.ViewModels.Sections.ContentWithImageSection
+﻿@using MetroBlooms.Extensions
+@model MetroBlooms.ViewModels.Sections.ContentWithImageSection
 
-<div>
-    @Html.Raw(Model.Text)
+<div class="content">
+    <div class="content-@Model.ImageSize.ToLower() content-@Model.ImageLocation.ToLower()">
+        <img src="@Model.Image.Url" alt="@Model.Image.Alt" />
+    </div>
+    <div class="@Html.EditableClass()" @Html.EditableData(Model.Text)>
+        @Model.Text
+    </div>
 </div>
-
-<img src="@Model.Image.Url" alt="@Model.Image.Alt" />
