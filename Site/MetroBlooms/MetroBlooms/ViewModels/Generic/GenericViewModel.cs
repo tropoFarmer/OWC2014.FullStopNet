@@ -25,12 +25,17 @@ namespace MetroBlooms.ViewModels.Generic
             this.Sections = FetchSections(contextNode);
         }
 
-        public List<LinkViewModel> FetchSubLinks(Node nodeContext)
+        private List<LinkViewModel> FetchSubLinks(Node nodeContext)
         {
-            var ancestor = nodeContext.GetAncestorByPathLevel(2);
-            return ancestor.GetChildNodes()
+            var linkContext = this.FetchLinkContext(nodeContext);
+            return linkContext.GetChildNodes()
                 .Where(x => !Config.NonContentAliases.Contains(x.NodeTypeAlias))
                 .Select(x => new LinkViewModel(x)).ToList();
+        }
+
+        private Node FetchLinkContext(Node currentNode)
+        {
+            return (currentNode.Level == 2) ? currentNode : currentNode.Parent as Node;
         }
     }
 }
