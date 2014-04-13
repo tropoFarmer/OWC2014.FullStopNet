@@ -38,6 +38,16 @@
                         // no formatting allowed for title
                         '#top-text': []
                     }
+                },
+                autoparagraph: {
+                    // generally switch autoparagraph on
+                    config: ['autoparagraph'],
+
+                    // per editable configuration
+                    editables: {
+                        // switch off autoparagraph for the class without_autoparagraph
+                        '.without_autoparagraph': []
+                    }
                 }
             },
             toolbar: {
@@ -70,6 +80,7 @@
 								common/paste,
 								common/commands,
 								common/abbr,
+                                common/autoparagraph,
 								common/image"></script>
 
 <link rel="stylesheet" href="http://cdn.aloha-editor.org/latest/css/aloha.css" type="text/css">
