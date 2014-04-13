@@ -227,22 +227,64 @@ img {
 
 .btn {
     display: inline-block;
-    padding: 5px 10px;
-    border: 0 none;
-    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+    border-top: 3px solid #5086c5;
+    border-right: 3px solid #5086c5;
+    border-bottom: 3px solid #5086c5;
+    border-left: 2px solid #5086c5;
     text-decoration: none;
-    color: #ffffff;
+    color: #5086c5;
+    font-size: 16px;
     font-family: 'Architects Daughter', 'Open Sans', sans-serif;
-    background: #5086c5;
+    text-transform: uppercase;
     cursor: pointer;
+    background: transparent;
 }
 
-.btn_reverse {
+.btn:before {
+    content: '';
+    display: block;
+    height: 7px;
+    width: 5px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    background: url(../images/btn-tl.gif) no-repeat;
+}
+
+.btn:after {
+    content: '';
+    display: block;
+    height: 7px;
+    width: 5px;
+    position: absolute;
+    bottom: -7px;
+    right: -5px;
+    background: url(../images/btn-br.gif) no-repeat;
+}
+
+.btn_rev {
     color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn_rev:before {
+    background-image: url(../images/btn-rev-tl.gif);
+}
+
+.btn_rev:after {
+    background-image: url(../images/btn-rev-br.gif);
 }
 
 .btn:hover {
-    background: #10658c;
+    background: #5086c5;
+    color: #ffffff;
+}
+
+.btn_rev:hover {
+    background: #ffffff;
+    color: #333333;
 }
 
 /* ---------------------------------------------------------------------
@@ -298,6 +340,56 @@ img {
 .section_imgSmall,
 .section_imgMedium {
     color: #ffffff;
+}
+
+/* ---------------------------------------------------------------------
+ Content Pages
+------------------------------------------------------------------------ */
+
+.contentPage {
+    background: #f1f0f0;
+}
+
+.contentPage .contentPage-bg {
+    position: absolute;
+    width: 100%;
+    height: 438px;
+    top: 0;
+    left: 0;
+    background: url('../images/content-page-background-image.jpg') 50% 100% no-repeat;
+    background-size: cover;
+}
+
+.contentPage .hdg {
+    margin: 0.5em 0.7em
+}
+
+.contentPage .container {
+    padding-top: 200px;
+    position: relative;
+    z-index: 5;
+}
+
+.contentPage .content {
+    margin-bottom: 8px;
+    background: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contentPage .content p {
+    padding: 10px 40px 10px 40px;
+}
+
+.contentPage .content-left {
+    margin: 0 1.2em 0.6em 0;
+}
+
+.contentPage .content-right {
+    margin: 0 0 0.6em 1.2em;
+}
+
+.contentPage .blockquote .hdg_4 {
+    text-align: center;
 }
 
 /* ---------------------------------------------------------------------
@@ -368,6 +460,7 @@ img {
 
 .content p {
     margin-bottom: 1em;
+    line-height: 1.8;
 }
 
 /* ---------------------------------------------------------------------
@@ -470,7 +563,10 @@ img {
 ------------------------------------------------------------------------ */
 
 .colNav {
+    padding: 40px 10px 10px 10px;
     font-size: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 .colNav ul > li > a {

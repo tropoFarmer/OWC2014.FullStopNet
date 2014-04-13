@@ -319,6 +319,11 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Assets\fonts\.keep" />
     <Content Include="Assets\images\.keep" />
+    <Content Include="Assets\images\btn-br.gif" />
+    <Content Include="Assets\images\btn-rev-br.gif" />
+    <Content Include="Assets\images\btn-rev-tl.gif" />
+    <Content Include="Assets\images\btn-tl.gif" />
+    <Content Include="Assets\images\content-page-background-image.jpg" />
     <Content Include="Assets\images\favicon.ico" />
     <Content Include="Assets\images\logo.png" />
     <Content Include="Assets\images\test.jpg" />
