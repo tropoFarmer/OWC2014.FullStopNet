@@ -11,20 +11,38 @@ Width: 640px+
 ------------------------------------------------------------------------ */
 
 .nav {
-
+    clear: none;
 }
 
-.nav-list {
-    font-size: 0;
-}
-
-.nav-list > li {
-    display: inline-block;
+.nav > li {
+    float: left;;
     font-size: 15px;
 }
 
-.nav-list > li > a {
-    padding: 10px 15px;
+.nav > li > a {
+    display: block;
+    padding: 5px 20px;
+}
+
+.navTag {
+    display: block;
+    font-size: 12px;
+}
+
+/* ---------------------------------------------------------------------
+ Secondary Navigation
+------------------------------------------------------------------------ */
+
+.navSecondary {
+    float: right;
+}
+
+.navSecondary > li {
+    float: left;
+}
+
+.navSecondary > li > a {
+    padding: 12px;
 }
 
 /* ---------------------------------------------------------------------

@@ -2,14 +2,19 @@
     <div class="siteHeader" role="masthead">
         <div class="container">
             <div class="headerInfo">
-                <a class="siteLogo" href="#"><img src="#" alt="Metro Blooms"/></a>
+                <a class="signIn" href="#">Sign In</a>
+                <ul class="navSecondary">
+                    <li><a href="#">Upcoming Events</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
             </div>
-            <div class="nav">
-                <ul class="nav-list">
-                    <li><a href="#">Learn about Raingardens</a></li>
-                    <li><a href="#">Get Involved</a></li>
-                    <li><a href="#">Nominate a Garden</a></li>
-                    <li><a href="#">Evaluate your Garden</a></li>
+            <div class="headerLower">
+                <a class="headerLogo" href="#"><img src="assets/images/logo.png" alt="Metro Blooms"/></a>
+                <ul class="nav">
+                    <li><a href="#"><span class="navTag">Learn about</span> Raingardens</a></li>
+                    <li><a href="#"><span class="navTag">Learn about</span> Get Involved</a></li>
+                    <li><a href="#"><span class="navTag">Learn about</span> Nominate a Garden</a></li>
+                    <li><a href="#"><span class="navTag">Learn about</span> Evaluate your Garden</a></li>
                 </ul>
             </div>
         </div> <!-- /.container -->
