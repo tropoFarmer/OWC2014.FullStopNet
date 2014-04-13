@@ -28,15 +28,15 @@ namespace MetroBlooms.ViewModels.Home
         }
     }
 
-    public class UmbracoPropertyString
+    public class UmbracoPropertyString : IHtmlString
     {
-        private readonly Node _node;
+        private readonly int _nodeId;
         private readonly string _propertyName;
         private readonly string _value;
 
-        public UmbracoPropertyString(Node node, string propertyName)
+        public UmbracoPropertyString(Node node, string propertyName) 
         {
-            _node = node;
+            _nodeId = node.Id;
             _propertyName = propertyName;
             _value = node.GetProperty<string>(propertyName);
         }
@@ -53,7 +53,12 @@ namespace MetroBlooms.ViewModels.Home
 
         public int NodeId
         {
-            get { return _node.Id; }
+            get { return _nodeId; }
+        }
+
+        public string ToHtmlString()
+        {
+            return _value;
         }
     }
 }
