@@ -1,20 +1,23 @@
-﻿using System;
+﻿using MetroBlooms.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
 using umbraco;
+using MetroBlooms.Extensions;
 
 namespace MetroBlooms.ViewModels.Home
 {
     public class HomeViewModel : UmbracoView
     {
-        public HtmlString MainContent { get; set; }
+        public string MainContent { get; set; }
+        public UmbracoImage Image { get; set; }
 
         public HomeViewModel()
         {
             var currentNode = uQuery.GetCurrentNode();
-            this.MainContent = new HtmlString(currentNode.GetProperty<string>("mainContent"));
+            this.MainContent = currentNode.GetProperty<string>("mainContent");
+            this.Image = currentNode.GetImage("image");
         }
     }
 }
