@@ -1,14 +1,23 @@
 ﻿@using MetroBlooms.Extensions
 @model MetroBlooms.ViewModels.Sections.QuoteSection
 
-<div class="@Html.EditableClass()" @Html.EditableData(Model.Heading)>
-    @Model.Heading
-</div>
+@if (Model.Heading.IsSet())
+{
+    <div class="@Html.EditableClass()" @Html.EditableData(Model.Heading)>
+        @Model.Heading
+    </div>
+}
 
-<div class="@Html.EditableClass()" @Html.EditableData(Model.Quote)>
-    @Model.Quote
-</div>
+@if (Model.Quote.IsSet())
+{
+    <div class="@Html.EditableClass()" @Html.EditableData(Model.Quote)>
+        @Model.Quote
+    </div>
+}
 
-<div class="@Html.EditableClass()" @Html.EditableData(Model.Citation)>
-    @Model.Citation
-</div>
+@if (Model.Citation.IsSet())
+{
+    <div class="@Html.EditableClass()" @Html.EditableData(Model.Citation)>
+        @Model.Citation
+    </div>
+}

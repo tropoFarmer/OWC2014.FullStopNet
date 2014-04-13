@@ -123,6 +123,7 @@ body {
     color: #333333;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -146,6 +147,7 @@ button {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 /* ---------------------------------------------------------------------
@@ -194,7 +196,7 @@ img {
 ------------------------------------------------------------------------ */
 
 .hdg {
-    font-family: 'Architects Daughter', 'Open Sans', sans-serif;
+
 }
 
 .hdg_1 {
@@ -251,7 +253,7 @@ img {
 
 .pane {
     background: #ffffff;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 /* ---------------------------------------------------------------------
@@ -331,6 +333,8 @@ img {
 
 .siteHeader {
     width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 .siteHeader:before,
@@ -349,21 +353,33 @@ img {
 
 .headerInfo {
     overflow: hidden;
-    font-size: 14px;
+    font-size: 12px;
+    background: #c7c6b9;
 }
 
 .headerLower {
     overflow: hidden;
+    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .headerLogo {
+    padding: 23px 30px 26px;
     float: left;
+}
+
+.headerLogo > img {
+    width: 155px;
 }
 
 .signIn {
     float: right;
     display: block;
     padding: 12px;
+    color: #ffffff;
+    background: #403f37;
 }
 
 /* ---------------------------------------------------------------------
@@ -372,11 +388,11 @@ img {
 
 .nav {
     clear: both;
+    font-size: 14px;
 }
 
 .nav > li {
     display: block;
-    font-size: 15px;
 }
 
 .nav > li > a {
@@ -388,9 +404,14 @@ img {
  Secondary Navigation
 ------------------------------------------------------------------------ */
 
+.navSecondary {
+    font-size: 11px;
+    color: #666666;
+}
+
 .navSecondary > li > a {
     display: block;
-    padding: 10px;
+    padding: 12px 10px;
 }
 
 /* ---------------------------------------------------------------------
