@@ -4,11 +4,13 @@ using umbraco;
 using umbraco.NodeFactory;
 using System.Linq;
 using System.Collections.Generic;
+using MetroBlooms.Utilities;
 
 namespace MetroBlooms.ViewModels.Generic
 {
     public class GenericViewModel : UmbracoView
     {
+        public string Title { get; set; }
         public string Content { get; set; }
         public List<Node> SubLinks { get; set; }
         public List<BaseSection> Sections { get; set; }
@@ -17,6 +19,7 @@ namespace MetroBlooms.ViewModels.Generic
         {
             if (contextNode == null) return;
 
+            this.Title = contextNode.Name;
             this.Content = contextNode.GetProperty<string>("content");
             this.SubLinks = this.FetchSubLinks(contextNode);
             this.Sections = FetchSections(contextNode);
@@ -24,7 +27,7 @@ namespace MetroBlooms.ViewModels.Generic
 
         public List<Node> FetchSubLinks(Node nodeContext)
         {
-            return nodeContext.GetChildNodes().ToList();
+            return nodeContext.GetChildNodes().Where(x => !Config.NonContentAliases.Contains(x.NodeTypeAlias)).ToList();
         }
     }
 }
