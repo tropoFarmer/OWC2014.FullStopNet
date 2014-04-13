@@ -317,11 +317,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Assets\fonts\.keep" />
+    <Content Include="Assets\images\.keep" />
     <Content Include="Assets\images\favicon.ico" />
     <Content Include="Assets\images\logo.png" />
+    <Content Include="Assets\images\test.jpg" />
     <Content Include="Assets\scripts\app\App.js" />
     <Content Include="Assets\scripts\app\lib\ActiveToggler.js" />
     <Content Include="Assets\scripts\app\lib\ResponsiveTriggers.js" />
+    <Content Include="Assets\scripts\app\lib\SnapScroll.js" />
     <Content Include="Assets\scripts\bootstrap.js" />
     <Content Include="Assets\scripts\vendor\jquery.min.js" />
     <Content Include="Assets\scripts\vendor\requirejs\domReady.js" />
@@ -330,6 +334,7 @@
     <Content Include="Assets\styles\screen-large.css" />
     <Content Include="Assets\styles\screen-medium.css" />
     <Content Include="Assets\styles\screen.css" />
+    <Content Include="Assets\uploads\.keep" />
     <Content Include="Config\splashes\booting.aspx" />
     <Content Include="Config\splashes\noNodes.aspx" />
     <Content Include="default.aspx" />
@@ -374,9 +379,6 @@
     <Content Include="Config\umbracoSettings.config" />
     <Content Include="Config\UrlRewriting.config" />
     <Content Include="Config\xsltExtensions.config" />
-    <Content Include="Assets\fonts\.keep" />
-    <Content Include="Assets\images\.keep" />
-    <Content Include="Assets\uploads\.keep" />
     <None Include="Properties\PublishProfiles\Sandbox - FE1 %28Ferenc%29.pubxml" />
     <None Include="Properties\PublishProfiles\Sandbox - FE2 %28Jen%29.pubxml" />
     <None Include="Properties\PublishProfiles\Sandbox - FE3 %28Matt%29.pubxml" />
