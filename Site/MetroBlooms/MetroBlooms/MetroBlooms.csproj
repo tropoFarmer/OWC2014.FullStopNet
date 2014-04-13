@@ -293,6 +293,7 @@
     <Compile Include="Utilities\ImageProcessor\ImageResult.cs" />
     <Compile Include="Utilities\SectionFactory.cs" />
     <Compile Include="Utilities\UmbracoImage.cs" />
+    <Compile Include="Utilities\UmbracoPropertyString.cs" />
     <Compile Include="Utilities\Util.cs" />
     <Compile Include="ViewModels\Generic\GenericViewModel.cs" />
     <Compile Include="ViewModels\Global\FooterViewModel.cs" />
