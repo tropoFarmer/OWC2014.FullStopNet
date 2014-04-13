@@ -13,8 +13,7 @@ namespace MetroBlooms.ViewModels.Sections
         public UmbracoImage BackgroundImage { get; set; }
         public string BackgroundColor { get; set; }
         public UmbracoPropertyString Text { get; set; }
-        public UrlPickerState CTA1 { get; set; }
-        public UrlPickerState CTA2 { get; set; }
+        public UrlPickerState CTA { get; set; }
         public string Alignment { get; set; }
 
         public CallToActionSection(Node node) : base(node)
@@ -25,8 +24,7 @@ namespace MetroBlooms.ViewModels.Sections
             BackgroundImage = node.GetImage("backgroundImage");
             BackgroundColor = node.GetProperty<string>("backgroundColor");
             Text = new UmbracoPropertyString(node, "text");
-            CTA1 = UrlPickerState.Deserialize(node.GetProperty<string>("cta1"));
-            CTA2 = UrlPickerState.Deserialize(node.GetProperty<string>("cta2"));
+            CTA = UrlPickerState.Deserialize(node.GetProperty<string>("cta"));
             Alignment = node.GetProperty<string>("Alignment");
         }
     }
