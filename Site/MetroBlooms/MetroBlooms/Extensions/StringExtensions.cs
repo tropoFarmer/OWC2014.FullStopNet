@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
+using MetroBlooms.Utilities;
 
 namespace MetroBlooms.Extensions
 {
@@ -91,6 +92,15 @@ namespace MetroBlooms.Extensions
         /// <param name="s">string to check if set</param>
         /// <returns>true if string is set</returns>
         public static bool IsSet(this string s)
+        {
+            return !string.IsNullOrWhiteSpace(s);
+        }
+        /// <summary>
+        /// Short hand extension for Is Null or White Space
+        /// </summary>
+        /// <param name="s">string to check if set</param>
+        /// <returns>true if string is set</returns>
+        public static bool IsSet(this UmbracoPropertyString s)
         {
             return !string.IsNullOrWhiteSpace(s);
         }
