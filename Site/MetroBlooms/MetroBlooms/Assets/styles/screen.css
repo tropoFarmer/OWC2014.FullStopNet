@@ -128,7 +128,7 @@ body {
 }
 
 a {
-    color: inherit;
+    color: #5086c5;
     text-decoration: none;
 }
 
@@ -541,6 +541,7 @@ img {
 }
 
 .nav > li > a {
+    color: inherit;
     display: block;
     padding: 5px 20px;
 }
@@ -555,6 +556,7 @@ img {
 }
 
 .navSecondary > li > a {
+    color: inherit;
     display: block;
     padding: 12px 10px;
 }
@@ -571,6 +573,7 @@ img {
 }
 
 .colNav ul > li > a {
+    color: inherit;
     display: inline-block;
     width: 100%;
     padding: 12px 5px;
@@ -625,18 +628,21 @@ img {
 .events > ul {
 }
 
-.events > ul > li a {
+.events > ul > li .event-heading {
     display: block;
     height: 90px;
     position: relative;
     padding: 37px 130px;
 }
-
+.events > ul > li .event-heading a {
+    color: inherit;
+}
 .events > ul > li {
     position: relative;
 }
 
-.events > ul > li.active a {
+.events > ul > li.active .event-heading,
+.events > ul > li.active .event-heading a {
     color: #ffffff;
     background-color: #5086c5;
 }
@@ -647,7 +653,8 @@ img {
 
 
 
-.events > ul > li:before {
+.events > ul > li .date {
+    display: inline-block;
     position: absolute;
     width: 50px;
     height: 50px;
@@ -655,16 +662,23 @@ img {
     top: 0;
     left: 0;
 
+    padding-top: 12px;
+
     margin-top: 22px;
     margin-left: 60px;
 
+    font-family: 'Architects Daughter', 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+
     background: url('../images/events-circle.png') 0 0 no-repeat;
-    content: '';
+
+    z-index: 1;
 }
 
 
 
-.events > ul > li:after {
+.events > ul > li > .after {
     position: absolute;
     width: 27px;
     height: 26px;
@@ -679,8 +693,20 @@ img {
     content: '';
 }
 
-.events > ul > li.active:after {
+.events > ul > li.active > .after {
     background-position: -50px -50px;
+}
+
+.events > ul > li .address {
+    float: right;
+    width: 200px;
+    margin-left: 40px;
+}
+
+.events > ul > li .address h4 {
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #5086c5;
 }
 
 .event-description {
@@ -688,6 +714,15 @@ img {
 
     padding: 20px 80px;
 
+}
+
+.clearfix {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
 /* ---------------------------------------------------------------------
@@ -787,4 +822,7 @@ img {
     font-style: italic;
     line-height: 30px;
     border: 1px solid #ffffff;
+}
+a.footerBtn {
+    color: inherit;
 }
