@@ -200,11 +200,11 @@ img {
 }
 
 .hdg_1 {
-    font-size: 48px;
+    font-size: 45px;
 }
 
 .hdg_2 {
-    font-size: 36px;
+    font-size: 30px;
 }
 
 .hdg_3 {
@@ -213,6 +213,12 @@ img {
 
 .hdg_4 {
     font-size: 20px;
+}
+
+.hdg_arch {
+    font-size: 20px;
+    font-family: 'Architects Daughter', 'Open Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 /* ---------------------------------------------------------------------
@@ -251,8 +257,7 @@ img {
 .section-bg {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     bottom: 0;
     z-index: 0;
     background: no-repeat #ffffff;
@@ -260,12 +265,17 @@ img {
 }
 
 .section > .container {
+    padding-top: 200px;
     position: relative;
     z-index: 5;
 }
 
 .section_small {
     min-height: 275px;
+}
+
+.section_small > .container {
+    padding-top: 115px;
 }
 
 /* Color Selection */
@@ -294,17 +304,41 @@ img {
     text-align: left;
 }
 
+.section_left > .section-bg {
+    left: 0;
+}
+
+.section_left > .container {
+    margin: 0 0 0 auto;
+}
+
 .section_right {
     text-align: right;
 }
 
-/* Image Width */
-.section_imgSmall .section-bg {
-
+.section_right > .section-bg {
+    right: 0;
 }
 
-.section_imgMedium .section-bg {
+.section_right > .container {
+    margin: 0 auto 0 0;
+}
 
+/* Image Width */
+.section_imgSmall > .section-bg {
+    width: 50%;
+}
+
+.section_imgSmall > .container {
+    width: 50%;
+}
+
+.section_imgMedium > .section-bg {
+    width: 66.66%;
+}
+
+.section_imgMedium > .container {
+    width: 33.33%;
 }
 
 
@@ -378,15 +412,13 @@ img {
     margin-bottom: 1em;
 }
 
-.content img {
-    width: 100%;
-}
-
 /* ---------------------------------------------------------------------
  Content Images
 ------------------------------------------------------------------------ */
 
-
+.content img {
+    width: 100%;
+}
 
 /* ---------------------------------------------------------------------
  Site Header

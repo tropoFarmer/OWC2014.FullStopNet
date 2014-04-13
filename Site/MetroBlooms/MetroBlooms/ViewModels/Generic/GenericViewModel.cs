@@ -21,16 +21,25 @@ namespace MetroBlooms.ViewModels.Generic
 
             this.Title = contextNode.Name;
             this.Content = contextNode.GetProperty<string>("content");
-            this.SubLinks = this.FetchSubLinks(contextNode);
+            var linkContext = this.FetchLinkContext(contextNode);
+            this.SubLinks = this.FetchSubLinks(linkContext);
             this.Sections = FetchSections(contextNode);
         }
 
-        public List<LinkViewModel> FetchSubLinks(Node nodeContext)
+        private List<LinkViewModel> FetchSubLinks(Node nodeContext)
         {
-            var ancestor = nodeContext.GetAncestorByPathLevel(2);
-            return ancestor.GetChildNodes()
+            return nodeContext.GetChildNodes()
                 .Where(x => !Config.NonContentAliases.Contains(x.NodeTypeAlias))
-                .Select(x => new LinkViewModel(x)).ToList();
+                .Select(x => new LinkViewModel(x)
+                {
+                    ChildLinks = x.Level == 3 ? this.FetchSubLinks(x) : new List<LinkViewModel>()
+                }).ToList();
         }
+
+        private Node FetchLinkContext(Node currentNode)
+        {
+            return currentNode.Level == 2 ? currentNode : currentNode.GetAncestorByPathLevel(2);
+        }
+
     }
 }

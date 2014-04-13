@@ -14,6 +14,8 @@ namespace MetroBlooms.ViewModels
         public string Title { get; set; }
         public string Url { get; set; }
         public bool NewWindow { get; set; }
+        public bool Active { get; set; }
+        public List<LinkViewModel> ChildLinks = new List<LinkViewModel>();
 
         public LinkViewModel(Node node)
         {
@@ -21,9 +23,9 @@ namespace MetroBlooms.ViewModels
 
             this.Title = node.Name;
             this.Url = node.Url;
-
             var redirectUrl = node.GetProperty<string>("redirectUrl");
             this.NewWindow = redirectUrl.IsSet();
+
         }
 
         public LinkViewModel(UrlPickerState picker)
