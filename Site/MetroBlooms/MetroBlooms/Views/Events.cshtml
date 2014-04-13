@@ -1,4 +1,5 @@
-﻿@model MetroBlooms.ViewModels.EventsViewModel
+﻿@using MetroBlooms.Utilities
+@model MetroBlooms.ViewModels.EventsViewModel
 
 <div class="contentPage">
     <div class="contentPage-bg" style="background-image:url('@Model.HeaderImage.UrlWithConstraints(1400,480)')"></div>
@@ -43,7 +44,17 @@
                                     <a href="#">@evt.Name</a>
                                     <div class="event-description">
                                         @Html.Raw(evt.Description)
-                                        @evt.LocationString
+                                        <div>
+                                            <a href="@evt.GoogleMapUrlString">@evt.LocationString</a>
+                                        </div>
+                                        <div>
+                                            <a href="@(Config.WorkshopSignupUrl+evt.Id)">
+                                                Sign Up
+                                            </a>
+                                            <a href="@(Config.WorkshopDetailsUrl + evt.Workshop_Desc_Id)">
+                                                Details
+                                            </a>
+                                        </div>
                                     </div>
                                 </li>
                             }

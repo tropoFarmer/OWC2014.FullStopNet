@@ -33,5 +33,15 @@ namespace MetroBlooms.Api.ViewModels
                 return new HtmlString(string.Join("<br/>", strings));
             }
         }
+        public string GoogleMapUrlString
+        {
+            get
+            {
+                var strings = new[] { Location.Name, Location.Address1, Location.Address2, string.Format("{0}, {1} {2}", Location.City, Location.State, Location.Zip) }.Where(s => !string.IsNullOrEmpty(s));
+
+
+                return "http://maps.google.com/?q=" + string.Join(",", strings);
+            }
+        }
     }
 }
