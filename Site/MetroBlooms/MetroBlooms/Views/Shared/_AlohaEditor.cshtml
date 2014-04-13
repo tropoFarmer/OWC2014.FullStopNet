@@ -2,9 +2,9 @@
 @*TODO: Download editor instead of using CDN*@
 
 <!-- load the jQuery and require.js libraries -->
-<script type="text/javascript" src="http://cdn.aloha-editor.org/latest/lib/require.js"></script>
+<script type="text/javascript" src="http://cdn.aloha-editor.org/0.23.26/lib/require.js"></script>
 <!-- Aloha uses some deprecated functions in JQuery, so we can't use latest -->
-<script type="text/javascript" src="http://cdn.aloha-editor.org/latest/lib/vendor/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="http://cdn.aloha-editor.org/0.23.26/lib/vendor/jquery-1.7.2.js"></script>
 
 <!-- here we have our Aloha Editor config -->
 <script>
@@ -67,7 +67,7 @@
     })(window);
 </script>
 
-<script src="http://cdn.aloha-editor.org/latest/lib/aloha.js"
+<script src="http://cdn.aloha-editor.org/0.23.26/lib/aloha.js"
         data-aloha-plugins="common/ui,
 								common/format,
 								common/table,
@@ -80,10 +80,9 @@
 								common/paste,
 								common/commands,
 								common/abbr,
-                                common/autoparagraph,
-								common/image"></script>
+                                common/image"></script>
 
-<link rel="stylesheet" href="http://cdn.aloha-editor.org/latest/css/aloha.css" type="text/css">
+<link rel="stylesheet" href="http://cdn.aloha-editor.org/0.23.26/css/aloha.css" type="text/css">
 <style type="text/css">
     .aloha-editable-highlight {
         outline: none !important;
@@ -100,8 +99,9 @@
             Ui.adopt("savebutton", Button, {
                 text: 'Save',
                 click: function() {
-                    var content = Aloha.activeEditable.getContents();
-                    var $domElement = $(Aloha.activeEditable.obj[0]);
+                    var activeEditable = Aloha.activeEditable;
+                    var content = activeEditable.getContents();
+                    var $domElement = $(activeEditable.obj[0]);
                     var nodeId = $domElement.data('nodeid');
                     var propertyName = $domElement.data('propertyname');
                     
@@ -118,7 +118,7 @@
 
                     request.done(function(msg) {
                         Aloha.jQuery("#log").html(msg).show().delay(1500).fadeOut();
-                        Aloha.activeEditable.originalContent = content;
+                        activeEditable.originalContent = content;
                     });
 
                     request.error(function(jqXHR, textStatus) {
