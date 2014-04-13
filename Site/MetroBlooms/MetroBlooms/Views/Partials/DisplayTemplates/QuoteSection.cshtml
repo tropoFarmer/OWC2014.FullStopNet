@@ -1,17 +1,17 @@
 ﻿@using MetroBlooms.Extensions
 @model MetroBlooms.ViewModels.Sections.QuoteSection
 
-<div class="content">
+<div class="content" id="@Model.SectionAnchor">
     <blockquote class="blockquote">
         @if (Model.Heading.IsSet())
         {
-        <h3 class="hdg hdg_4 @Html.EditableClass()" @Html.EditableData(Model.Heading)>@Model.Heading</h3>
+            <h3 class="hdg hdg_4 @Html.EditableClass()" @Html.EditableData(Model.Heading)>@Model.Heading</h3>
         }
         @if (Model.Quote.IsSet())
         {
-        <div class="@Html.EditableClass()" @Html.EditableData(Model.Quote)>
-            @Model.Quote
-        </div>
+            <div class="@Html.EditableClass()" @Html.EditableData(Model.Quote)>
+                @Model.Quote
+            </div>
         }
     </blockquote>
 </div> <!-- /.content -->

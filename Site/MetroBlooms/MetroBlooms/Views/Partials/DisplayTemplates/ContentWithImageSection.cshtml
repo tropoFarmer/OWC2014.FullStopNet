@@ -1,7 +1,11 @@
 ﻿@using MetroBlooms.Extensions
 @model MetroBlooms.ViewModels.Sections.ContentWithImageSection
 
-<div class="content">
+<div class="content" id="@Model.SectionAnchor">
+    @if (Model.Subheader.IsSet())
+    {
+        <h2 class="hdg hdg_2">@Model.Subheader</h2>
+    }
     <div class="content-@Model.ImageSize.ToLower() content-@Model.ImageLocation.ToLower()">
         <img src="@Model.Image.Url" alt="@Model.Image.Alt" />
     </div>

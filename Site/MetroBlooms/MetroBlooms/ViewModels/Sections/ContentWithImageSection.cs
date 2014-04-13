@@ -16,6 +16,7 @@ namespace MetroBlooms.ViewModels.Sections
     public class ContentWithImageSection : BaseSection
     {
         public UmbracoPropertyString Text { get; set; }
+        public string Subheader { get; set; }
         public UmbracoImage Image { get; set; }
         public string ImageLocation { get; set; }
         public string ImageSize { get; set; }
@@ -26,6 +27,7 @@ namespace MetroBlooms.ViewModels.Sections
 
             this.Text = new UmbracoPropertyString(node, "text");
             this.Image = node.GetImage("image");
+            this.Subheader = node.GetProperty<string>("subheader");
             this.ImageLocation = node.GetProperty<string>("imageLocation");
             this.ImageSize = node.GetProperty<string>("imageSize");
         }

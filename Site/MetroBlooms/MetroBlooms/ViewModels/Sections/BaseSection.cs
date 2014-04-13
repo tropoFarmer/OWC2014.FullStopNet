@@ -13,9 +13,11 @@ namespace MetroBlooms.ViewModels.Sections
     public class BaseSection
     {
         public Node NodeContext { get; set; }
+        public string SectionAnchor { get; set; }
         public BaseSection(Node node)
         {
             this.NodeContext = node;
+            this.SectionAnchor = node.UrlName;
         }
     }
 }
