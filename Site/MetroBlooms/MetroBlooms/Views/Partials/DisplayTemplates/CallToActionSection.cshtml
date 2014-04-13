@@ -1,6 +1,11 @@
 ﻿@using MetroBlooms.Extensions
 @model MetroBlooms.ViewModels.Sections.CallToActionSection
 
+@if (Model.BackgroundColor.IsSet())
+{
+    String.Format("#{0}", Model.BackgroundColor);
+}
+
 <img src="@Model.BackgroundImage.Url" alt="@Model.BackgroundImage.Alt" />
 
 @if (Model.Title.IsSet())
