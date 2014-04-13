@@ -1,7 +1,8 @@
 <?php include 'includes/head.php'; ?>
 <?php include 'includes/header.php'; ?>
 
-<div class="section">
+<div class="contentPage">
+    <div class="contentPage-bg"></div>
     <div class="container">
         <div class="grid">
             <div class="grid-col grid-col_secondary">
@@ -18,7 +19,17 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">News</a></li>
+                        <li>
+                            <a href="#">News</a>
+                            <div class="colNav-sub">
+                                <ul>
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <li><a href="#">Item 3</a></li>
+                                    <li><a href="#">Item 4</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="#">Reports</a></li>
                         <li><a href="#">Garden Map</a></li>
                     </ul>
