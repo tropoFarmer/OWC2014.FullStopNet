@@ -1,4 +1,5 @@
-﻿using MetroBlooms.Utilities;
+﻿using MetroBlooms.Extensions;
+using MetroBlooms.Utilities;
 using MetroBlooms.ViewModels.Home;
 using uComponents.DataTypes.UrlPicker.Dto;
 using umbraco;
@@ -9,6 +10,7 @@ namespace MetroBlooms.ViewModels.Sections
     public class CallToActionSection : BaseSection
     {
         public UmbracoPropertyString Title { get; set; }
+        public UmbracoImage BackgroundImage { get; set; }
         public UmbracoPropertyString Text { get; set; }
         public UrlPickerState CTA1 { get; set; }
         public UrlPickerState CTA2 { get; set; }
@@ -19,6 +21,7 @@ namespace MetroBlooms.ViewModels.Sections
             if (node == null) return;
 
             Title = new UmbracoPropertyString(node, "title");
+            BackgroundImage = node.GetImage("backgroundImage");
             Text = new UmbracoPropertyString(node, "text");
             CTA1 = UrlPickerState.Deserialize(node.GetProperty<string>("cta1"));
             CTA2 = UrlPickerState.Deserialize(node.GetProperty<string>("cta2"));
