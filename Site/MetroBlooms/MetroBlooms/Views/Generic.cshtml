@@ -7,7 +7,7 @@
                 <ul>
                     @foreach (var link in Model.SubLinks)
                     {
-                        <li><a href="@link.Url">@link.Name</a></li>
+                        <li><a href="@link.Url" target="@(link.NewWindow?"_blank":"_self")">@link.Title</a></li>
                     }
                 </ul>
             </div> <!-- /.grid-col -->

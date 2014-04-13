@@ -7,7 +7,7 @@
     var images = new[] { Model.Image1, Model.Image2, Model.Image3 }.WhereNotNull();
     var blockClass = string.Format("blocks_{0}up", images.Count());
 }
-<div class="content">
+<div class="content" id="@Model.SectionAnchor">
     <div class="blocks @blockClass">
         @foreach (var image in images)
         {
