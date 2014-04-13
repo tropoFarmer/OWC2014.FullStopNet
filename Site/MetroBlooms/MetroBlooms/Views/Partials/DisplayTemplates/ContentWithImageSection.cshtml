@@ -7,7 +7,7 @@
         <h2 class="hdg hdg_2">@Model.Subheader</h2>
     }
     <div class="content-@Model.ImageSize.ToLower() content-@Model.ImageLocation.ToLower()">
-        <img src="@Model.Image.Url" alt="@Model.Image.Alt" />
+        <img src="@Model.Image)" alt="@Model.Image.Alt" />
     </div>
     <div class="@Html.EditableClass()" @Html.EditableData(Model.Text)>
         @Model.Text
