@@ -1,3 +1,8 @@
+<?php
+if (!isset($footerType)) {
+    $footerType = '';
+}
+?>
 <div class="site">
     <div class="siteHeader" role="masthead">
         <div class="container">
