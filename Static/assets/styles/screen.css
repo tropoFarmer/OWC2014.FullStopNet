@@ -226,13 +226,13 @@ img {
     border-radius: 6px;
     text-decoration: none;
     color: #ffffff;
-    background: #1092c8;
+    font-family: 'Architects Daughter', 'Open Sans', sans-serif;
+    background: #5086c5;
     cursor: pointer;
 }
 
-.btn_lg {
-    padding: 8px 12px;
-    font-size: 20px;
+.btn_reverse {
+    color: #ffffff;
 }
 
 .btn:hover {

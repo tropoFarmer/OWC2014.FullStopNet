@@ -33,9 +33,9 @@
                 <h2 class="hdg hdg_1">Buttons</h2>
                 <div class="row">
                     <a class="btn" href="#">Button</a>
-                    <a class="btn btn_lg" href="#">Button</a>
+                    <a class="btn btn_rev" href="#">Button Reverse</a>
                     <button class="btn">Button</button>
-                    <button class="btn btn_lg">Button</button>
+                    <button class="btn btn_rev">Button Reverse</button>
                 </div> <!-- /.row -->
             </div> <!-- /.grid-col -->
         </div> <!-- /.grid -->
