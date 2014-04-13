@@ -132,6 +132,7 @@
     <Compile Include="RemoteApi\ApiBase.cs" />
     <Compile Include="RemoteApi\EvaluatorApi.cs" />
     <Compile Include="RemoteApi\GardenApi.cs" />
+    <Compile Include="ViewModels\ApiCredentials.cs" />
     <Compile Include="ViewModels\Evaluator.cs" />
     <Compile Include="ViewModels\GardenEvaluation.cs" />
     <Compile Include="ViewModels\GardenViewModels\Garden.cs" />
