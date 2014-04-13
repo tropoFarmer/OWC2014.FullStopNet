@@ -502,6 +502,36 @@ img {
 
 
 /* ---------------------------------------------------------------------
+ Column Sub Navigation
+------------------------------------------------------------------------ */
+
+.colNav ul > li.active .colNav-sub ul {
+    display: block;
+}
+
+.colNav-sub ul {
+    display: none;
+    padding: 7px 0 15px 0;
+    font-size: 13px;
+    border-bottom: 1px solid #c7c6b9;
+}
+
+.colNav-sub ul > li > a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px 0 15px;
+    font-weight: lighter;
+}
+
+.colNav-sub ul > li > a:hover {
+    font-weight: normal;
+}   
+
+.colNav-sub ul > li.active > a {
+    font-weight: normal;
+}
+
+/* ---------------------------------------------------------------------
  Site Footer
 ------------------------------------------------------------------------ */
 
