@@ -1,13 +1,12 @@
 ﻿using MetroBlooms.Extensions;
 using MetroBlooms.Utilities;
-using MetroBlooms.ViewModels.Home;
 using uComponents.DataTypes.UrlPicker.Dto;
 using umbraco;
 using umbraco.NodeFactory;
 
 namespace MetroBlooms.ViewModels.Sections
 {
-    public class SplashContentWithImage : BaseSection
+    public class SplashContentWithImageSection : BaseSection
     {
         public UmbracoPropertyString Title { get; set; }
         public UmbracoImage BackgroundImage { get; set; }
@@ -16,7 +15,7 @@ namespace MetroBlooms.ViewModels.Sections
         public string Size { get; set; }
         public string Alignment { get; set; }
 
-        public SplashContentWithImage(Node node) : base(node)
+        public SplashContentWithImageSection(Node node) : base(node)
         {
             if (node == null) return;
 
