@@ -694,14 +694,14 @@ img {
     right: 0;
     font-size: 14px;
     font-weight: lighter;
+    line-height: 80px;
+    text-align: center;
     background: rgba(0, 0, 0, 0.8);
     z-index: 9;
 }
 
 .site.home .siteFooter-contact {
     position: fixed;
-    line-height: 80px;
-    text-align: center;
 }
 
 
