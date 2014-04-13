@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using umbraco;
 using MetroBlooms.Extensions;
+using MetroBlooms.ViewModels.Sections;
 
 using umbraco.NodeFactory;
 
@@ -14,6 +15,7 @@ namespace MetroBlooms.ViewModels.Home
     {
         public UmbracoPropertyString MainContent { get; set; }
         public UmbracoImage Image { get; set; }
+        public List<BaseSection> Sections { get; set; }
 
         public HomeViewModel()
         {
@@ -22,6 +24,7 @@ namespace MetroBlooms.ViewModels.Home
             this.MainContent = new UmbracoPropertyString(currentNode, "mainContent");
             string str = MainContent;
             this.Image = currentNode.GetImage("image");
+            this.Sections = this.FetchSections(currentNode);
         }
     }
 

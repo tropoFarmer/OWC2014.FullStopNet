@@ -291,6 +291,7 @@
     <Compile Include="Utilities\Config.cs" />
     <Compile Include="Utilities\ImageProcessor\ImageFilterUtil.cs" />
     <Compile Include="Utilities\ImageProcessor\ImageResult.cs" />
+    <Compile Include="Utilities\SectionFactory.cs" />
     <Compile Include="Utilities\UmbracoImage.cs" />
     <Compile Include="Utilities\Util.cs" />
     <Compile Include="ViewModels\Generic\GenericViewModel.cs" />
@@ -300,6 +301,8 @@
     <Compile Include="ViewModels\Home\GardenViewModel.cs" />
     <Compile Include="ViewModels\Home\HomeViewModel.cs" />
     <Compile Include="ViewModels\Global\HeadViewModel.cs" />
+    <Compile Include="ViewModels\Sections\BaseSection.cs" />
+    <Compile Include="ViewModels\Sections\ContentWithImageSection.cs" />
     <Compile Include="ViewModels\UmbracoView.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -381,6 +384,7 @@
     <Content Include="Views\Generic.cshtml" />
     <Content Include="Views\Partials\Foot.cshtml" />
     <Content Include="Views\Partials\Footer.cshtml" />
+    <Content Include="Views\Partials\DisplayTemplates\ContentWithImageSection.cshtml" />
     <Content Include="Views\Partials\GoogleAnalytics.cshtml" />
     <Content Include="Views\Learn.cshtml" />
     <Content Include="Views\ApiTest.cshtml">
