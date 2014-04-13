@@ -5,7 +5,9 @@
     <div class="container">
         <div class="grid">
             <div class="grid-col grid-col_secondary">
-                Left Col
+                <div class="colNav">
+
+                </div>
             </div> <!-- /.grid-col -->
             <div class="grid-col grid-col_primary">
                 <div class="content">
@@ -37,37 +39,37 @@
                     </div>
                 </div> <!-- /.content -->
                 <div class="content">
-                    <div class="content-lg content-left">
+                    <div class="content-large content-left">
                         <img src="http://placehold.it/600x400" alt="" />
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div> <!-- /.content -->
                 <div class="content">
-                    <div class="content-lg content-right">
+                    <div class="content-large content-right">
                         <img src="http://placehold.it/600x400" alt="" />
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div> <!-- /.content -->
                 <div class="content">
-                    <div class="content-md content-left">
+                    <div class="content-medium content-left">
                         <img src="http://placehold.it/600x400" alt="" />
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div> <!-- /.content -->
                 <div class="content">
-                    <div class="content-md content-right">
+                    <div class="content-medium content-right">
                         <img src="http://placehold.it/600x400" alt="" />
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div> <!-- /.content -->
                 <div class="content">
-                    <div class="content-sm content-right">
+                    <div class="content-small content-right">
                         <img src="http://placehold.it/400x400" alt="" />
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                 </div> <!-- /.content -->
                 <div class="content">
-                    <div class="content-sm content-left">
+                    <div class="content-small content-left">
                         <img src="http://placehold.it/400x400" alt="" />
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
