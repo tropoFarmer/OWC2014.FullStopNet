@@ -12,7 +12,7 @@ namespace MetroBlooms.ViewModels.Generic
     {
         public string Title { get; set; }
         public string Content { get; set; }
-        public List<Node> SubLinks { get; set; }
+        public List<LinkViewModel> SubLinks { get; set; }
         public List<BaseSection> Sections { get; set; }
 
         public GenericViewModel(Node contextNode)
@@ -25,9 +25,11 @@ namespace MetroBlooms.ViewModels.Generic
             this.Sections = FetchSections(contextNode);
         }
 
-        public List<Node> FetchSubLinks(Node nodeContext)
+        public List<LinkViewModel> FetchSubLinks(Node nodeContext)
         {
-            return nodeContext.GetChildNodes().Where(x => !Config.NonContentAliases.Contains(x.NodeTypeAlias)).ToList();
+            return nodeContext.GetChildNodes()
+                .Where(x => !Config.NonContentAliases.Contains(x.NodeTypeAlias))
+                .Select(x => new LinkViewModel(x)).ToList();
         }
     }
 }

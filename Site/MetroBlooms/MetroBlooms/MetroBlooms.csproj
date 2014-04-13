@@ -278,6 +278,7 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\ExternalController.cs" />
     <Compile Include="Controllers\GenericController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Extensions\HtmlHelperExtensions.cs" />
@@ -302,6 +303,7 @@
     <Compile Include="ViewModels\Home\GardenViewModel.cs" />
     <Compile Include="ViewModels\Home\HomeViewModel.cs" />
     <Compile Include="ViewModels\Global\HeadViewModel.cs" />
+    <Compile Include="ViewModels\LinkViewModel.cs" />
     <Compile Include="ViewModels\Sections\BaseSection.cs" />
     <Compile Include="ViewModels\Sections\CallToActionSection.cs" />
     <Compile Include="ViewModels\Sections\ContentWithImageSection.cs" />
