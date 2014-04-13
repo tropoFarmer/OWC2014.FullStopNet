@@ -244,8 +244,69 @@ img {
 ------------------------------------------------------------------------ */
 
 .section {
-    background-size: contain;
+    min-height: 700px;
+    position: relative;
 }
+
+.section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: no-repeat #ffffff;
+    background-size: cover;
+}
+
+.section > .container {
+    position: relative;
+    z-index: 5;
+}
+
+.section_small {
+    min-height: 275px;
+}
+
+/* Color Selection */
+.section_dark {
+    color: #ffffff;
+}
+
+.section_dark > .section-bg {
+    background-color: #403f37;
+}
+
+.section_color {
+    color: #ffffff;
+}
+
+.section_color > .section-bg {
+    background-color: #5086c5;
+}
+
+/* Alignment */
+.section_center {
+    text-align: center;
+}
+
+.section_left {
+    text-align: left;
+}
+
+.section_right {
+    text-align: right;
+}
+
+/* Image Width */
+.section_imgSmall .section-bg {
+
+}
+
+.section_imgMedium .section-bg {
+
+}
+
 
 /* ---------------------------------------------------------------------
  Pane
