@@ -278,6 +278,7 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="ViewModels\EventsViewModel.cs" />
     <Compile Include="Controllers\ExternalController.cs" />
     <Compile Include="Controllers\GenericController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -308,7 +309,7 @@
     <Compile Include="ViewModels\Sections\CallToActionSection.cs" />
     <Compile Include="ViewModels\Sections\ContentWithImageSection.cs" />
     <Compile Include="ViewModels\Sections\ImageDisplaySection.cs" />
-    <Compile Include="ViewModels\Sections\IntroSection.cs" />
+    <Compile Include="ViewModels\Sections\SplashContentWithImageSection.cs" />
     <Compile Include="ViewModels\Sections\RichTextSection.cs" />
     <Compile Include="ViewModels\Sections\QuoteSection.cs" />
     <Compile Include="ViewModels\UmbracoView.cs" />
@@ -323,8 +324,13 @@
     <Content Include="Assets\images\btn-rev-br.gif" />
     <Content Include="Assets\images\btn-rev-tl.gif" />
     <Content Include="Assets\images\btn-tl.gif" />
+    <Content Include="Assets\images\circle.png" />
     <Content Include="Assets\images\content-page-background-image.jpg" />
     <Content Include="Assets\images\favicon.ico" />
+    <Content Include="Assets\images\footer-icon-address.png" />
+    <Content Include="Assets\images\footer-icon-email.png" />
+    <Content Include="Assets\images\footer-icon-phone.png" />
+    <Content Include="Assets\images\footer-icon-privacy.png" />
     <Content Include="Assets\images\home\1.jpg" />
     <Content Include="Assets\images\home\2.jpg" />
     <Content Include="Assets\images\home\3.jpg" />
@@ -405,6 +411,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\Events\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>
@@ -424,11 +431,12 @@
     <Content Include="Views\Partials\GoogleAnalytics.cshtml" />
     <Content Include="Views\Partials\DisplayTemplates\CallToActionSection.cshtml" />
     <Content Include="Views\Partials\DisplayTemplates\ImageDisplaySection.cshtml" />
-    <Content Include="Views\Partials\DisplayTemplates\IntroSection.cshtml" />
+    <Content Include="Views\Partials\DisplayTemplates\SplashContentWithImageSection.cshtml" />
     <Content Include="Views\Partials\DisplayTemplates\QuoteSection.cshtml" />
     <Content Include="Views\Learn.cshtml" />
     <Content Include="Views\Shared\_AlohaEditor.cshtml" />
     <Content Include="Views\Partials\DisplayTemplates\RichTextSection.cshtml" />
+    <Content Include="Views\Events.cshtml" />
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -462,7 +470,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63385</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

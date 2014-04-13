@@ -1,0 +1,40 @@
+﻿@model MetroBlooms.ViewModels.EventsViewModel
+
+<div class="contentPage">
+    <div class="contentPage-bg" style="background-image:url('@Model.HeaderImage.UrlWithConstraints(1400,480)')"></div>
+    <div class="container">
+        <div class="grid">
+            <div class="grid-col grid-col_secondary">
+                <div class="colNav">
+                    <ul>
+                        @foreach (var link in Model.SubLinks)
+                        {
+                            <li class="@(link.Active?"active":"")">
+                                <a href="@link.Url" target="@(link.NewWindow?"_blank":"_self")">@link.Title</a>
+                                @if (link.ChildLinks.Any())
+                                {
+                                    <div class="colNav-sub">
+                                        <ul>
+                                            @foreach (var subLink in link.ChildLinks)
+                                            {
+                                                <li class="@(subLink.Active ? "active" : "")"><a href="@subLink.Url" target="@(subLink.NewWindow ? "_blank" : "_self")">@subLink.Title</a></li>
+                                            }
+                                        </ul>
+                                    </div>
+                                }
+                            </li>
+                        }
+
+                    </ul>
+                </div>
+            </div> <!-- /.grid-col -->
+
+            <div class="grid-col grid-col_primary">
+                @foreach (var evt in Model.Events)
+                {
+                    @evt.Name; @Html.DisplayFor(x => evt);
+                }
+            </div> <!-- /.grid-col -->
+        </div> <!-- /.grid -->
+    </div> <!-- /.container -->
+</div> <!-- /.section -->
