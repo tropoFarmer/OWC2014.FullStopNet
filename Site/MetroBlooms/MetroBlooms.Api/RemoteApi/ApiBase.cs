@@ -15,9 +15,14 @@ namespace MetroBlooms.Api.RemoteApi
         {
             UserName = apiCredentials.UserName;
             Password = apiCredentials.Password;
+            RootUrl = apiCredentials.RootApiUrl;
+            if (!RootUrl.EndsWith("/", StringComparison.Ordinal))
+            {
+                RootUrl += "/";
+            }
         }
 
-        protected const string RootUrl = "http://www.metroblooms.org/api/";
+        protected string RootUrl { get; set; }
         protected string SessionToken { get; set; }
 
         protected List<T> GetList<T>(string relativeUrl)

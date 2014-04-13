@@ -297,10 +297,15 @@
     <Compile Include="ViewModels\Global\FooterViewModel.cs" />
     <Compile Include="ViewModels\Global\FootViewModel.cs" />
     <Compile Include="ViewModels\Global\HeaderViewModel.cs" />
+    <Compile Include="ViewModels\Home\GardenViewModel.cs" />
     <Compile Include="ViewModels\Home\HomeViewModel.cs" />
     <Compile Include="ViewModels\Global\HeadViewModel.cs" />
     <Compile Include="ViewModels\Sections\BaseSection.cs" />
+    <Compile Include="ViewModels\Sections\CallToActionSection.cs" />
     <Compile Include="ViewModels\Sections\ContentWithImageSection.cs" />
+    <Compile Include="ViewModels\Sections\ImageDisplaySection.cs" />
+    <Compile Include="ViewModels\Sections\IntroSection.cs" />
+    <Compile Include="ViewModels\Sections\QuoteSection.cs" />
     <Compile Include="ViewModels\UmbracoView.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -384,6 +389,13 @@
     <Content Include="Views\Partials\Footer.cshtml" />
     <Content Include="Views\Partials\DisplayTemplates\ContentWithImageSection.cshtml" />
     <Content Include="Views\Partials\GoogleAnalytics.cshtml" />
+    <Content Include="Views\Partials\DisplayTemplates\CallToActionSection.cshtml" />
+    <Content Include="Views\Partials\DisplayTemplates\ImageDisplaySection.cshtml" />
+    <Content Include="Views\Partials\DisplayTemplates\IntroSection.cshtml" />
+    <Content Include="Views\Partials\DisplayTemplates\QuoteSection.cshtml" />
+    <Content Include="Views\ApiTest.cshtml" />
+    <Content Include="Views\Learn.cshtml" />
+    <Content Include="Views\Shared\_AlohaEditor.cshtml" />
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
