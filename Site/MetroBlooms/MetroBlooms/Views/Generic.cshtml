@@ -4,7 +4,12 @@
     <div class="container">
         <div class="grid">
             <div class="grid-col grid-col_secondary">
-                Left Col
+                <ul>
+                    @foreach (var link in Model.SubLinks)
+                    {
+                        <li><a href="@link.Url">@link.Name</a></li>
+                    }
+                </ul>
             </div> <!-- /.grid-col -->
 
             <div class="grid-col grid-col_primary">

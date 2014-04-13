@@ -4,6 +4,7 @@ using umbraco;
 using umbraco.NodeFactory;
 using System.Linq;
 using System.Collections.Generic;
+using MetroBlooms.Utilities;
 
 namespace MetroBlooms.ViewModels.Generic
 {
@@ -26,7 +27,7 @@ namespace MetroBlooms.ViewModels.Generic
 
         public List<Node> FetchSubLinks(Node nodeContext)
         {
-            return nodeContext.GetChildNodes().ToList();
+            return nodeContext.GetChildNodes().Where(x => !Config.NonContentAliases.Contains(x.NodeTypeAlias)).ToList();
         }
     }
 }
