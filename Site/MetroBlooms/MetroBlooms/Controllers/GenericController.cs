@@ -1,4 +1,7 @@
-﻿using MetroBlooms.ViewModels.Generic;
+﻿using MetroBlooms.Api.RemoteApi;
+using MetroBlooms.Utilities;
+using MetroBlooms.ViewModels;
+using MetroBlooms.ViewModels.Generic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,9 +26,15 @@ namespace MetroBlooms.Controllers
             return View("Generic", new GenericViewModel(currentNode));
         }
 
-        public ActionResult ApiTest(RenderModel model)
+        public ActionResult Events(RenderModel model)
         {
-            return View(new GardenViewModel());
+            var api = new EventApi(Config.ApiCredentials);
+            var events = api.GetAllEvents();
+            var currentNode = uQuery.GetCurrentNode();
+
+            var viewModel = new EventsViewModel(currentNode);
+            viewModel.Events = events;
+            return View("Events", viewModel);
         }
     }
 }
