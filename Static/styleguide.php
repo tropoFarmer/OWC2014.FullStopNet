@@ -1,4 +1,5 @@
 <?php
+    // Variables
     $footerType = 'home';
 ?>
 <?php include 'includes/head.php'; ?>
@@ -23,6 +24,9 @@
 </div> <!-- /.section -->
 
 <div class="section">
+    <div class="section-bg">
+        <img src="" alt="" />
+    </div>
     <div class="container">
         <div class="grid">
             <div class="grid-col">

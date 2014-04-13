@@ -113,6 +113,12 @@ textarea {
  Base Styles
 ------------------------------------------------------------------------ */
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     color: #333333;
     font-family: 'Open Sans', sans-serif;
@@ -133,6 +139,11 @@ a, button {
     transition: all .15s ease-in-out;
 }
 
+input,
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* ---------------------------------------------------------------------
  Layout
 ------------------------------------------------------------------------ */
@@ -142,7 +153,12 @@ a, button {
     max-width: 1600px;
 }
 
+.siteMain {
+    padding-bottom: 50px;
+}
+
 .container {
+    max-width: 1020px;
     margin: 0 auto;
 }
 
@@ -182,6 +198,10 @@ a, button {
 }
 
 .siteFooter_home {
+    padding-bottom: 40px;
+}
+
+.siteFooter_home .siteFooter-contact {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -255,6 +275,14 @@ a, button {
 
 .nav-list > li > a {
     padding: 5px 20px;
+}
+
+/* ---------------------------------------------------------------------
+ Sections
+------------------------------------------------------------------------ */
+
+.section {
+    background-size: contain;
 }
 
 /* ---------------------------------------------------------------------

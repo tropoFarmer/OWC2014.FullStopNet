@@ -14,4 +14,4 @@
             </div>
         </div> <!-- /.container -->
     </div> <!-- /.siteHeader -->
-    <div class="siteMain" role="main">
+    <div class="siteMain<?php if ($footerType == 'home') {echo " siteMain_home";} ?>" role="main">
