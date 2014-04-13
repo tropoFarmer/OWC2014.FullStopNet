@@ -50,15 +50,44 @@ namespace MetroBlooms.Utilities
             get { return GetConfigSetting<string>("siteTitle"); }
         }
 
+        #region Analytics
+
         public static string GoogleAnalyticsKey
         {
-            get { return GetConfigSetting<string>("googleAnalyticsDomain"); }
+            get { return GetConfigSetting<string>("googleAnalyticsKey"); }
         }
 
         public static string GoogleAnalyticsDomain
         {
-            get { return GetConfigSetting<string>("googleAnalyticsKey"); }
+            get { return GetConfigSetting<string>("googleAnalyticsDomain"); }
         }
+
+        #endregion Analytics
+
+        #region Social
+
+        public static string FacebookId
+        {
+            get { return GetConfigSetting<string>("facebookID"); }
+        }
+
+        public static string TwitterHandle
+        {
+            get { return GetConfigSetting<string>("twitterHandle"); }
+        }
+
+        public static string LinkedInId
+        {
+            get { return GetConfigSetting<string>("linkedInID"); }
+        }
+
+        public static string PinterestId
+        {
+            get { return GetConfigSetting<string>("pinterestID"); }
+        }
+
+        #endregion Social
+
 
         private static T GetConfigSetting<T>(string name)
         {
