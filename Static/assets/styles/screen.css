@@ -159,10 +159,6 @@ img {
     max-width: 1600px;
 }
 
-.siteMain {
-    padding-bottom: 50px;
-}
-
 .container {
     max-width: 1020px;
     margin: 0 auto;
@@ -623,6 +619,78 @@ img {
 }
 
 /* ---------------------------------------------------------------------
+ Events
+------------------------------------------------------------------------ */
+
+.events > ul {
+}
+
+.events > ul > li a {
+    display: block;
+    height: 90px;
+    position: relative;
+    padding: 37px 130px;
+}
+
+.events > ul > li {
+    position: relative;
+}
+
+.events > ul > li.active a {
+    color: #ffffff;
+    background-color: #5086c5;
+}
+
+.events > ul > li.active .event-description {
+    display: block;
+}
+
+
+
+.events > ul > li:before {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    top: 0;
+    left: 0;
+
+    margin-top: 22px;
+    margin-left: 60px;
+
+    background: url('../images/events-circle.png') 0 0 no-repeat;
+    content: '';
+}
+
+
+
+.events > ul > li:after {
+    position: absolute;
+    width: 27px;
+    height: 26px;
+
+    top: 0;
+    right: 0;
+
+    margin-top: 30px;
+    margin-right: 80px;
+
+    background: url('../images/events-sprite.png') 0 0 no-repeat;
+    content: '';
+}
+
+.events > ul > li.active:after {
+    background-position: -50px -50px;
+}
+
+.event-description {
+    display: none;
+
+    padding: 20px 80px;
+
+}
+
+/* ---------------------------------------------------------------------
  Site Footer
 ------------------------------------------------------------------------ */
 
@@ -712,7 +780,7 @@ img {
 
 .siteFooter-contact li {
     display: inline-block;
-    padding: 0 5px;
+    padding: 0 12px;
 }
 
 .footerBtn {
