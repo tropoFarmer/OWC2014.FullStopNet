@@ -1,16 +1,15 @@
 ﻿@using MetroBlooms.Extensions
 @model MetroBlooms.ViewModels.Sections.RichTextSection
 
-@if (Model.Heading.IsSet())
-{
-    <div class="@Html.EditableClass()" @Html.EditableData(Model.Heading)>
-        @Model.Heading
-    </div>
-}
-
-@if (Model.Text.IsSet())
-{
+<div class="content">
+    @if (Model.Heading.IsSet())
+    {
+    <h1 class="hdg hdg_1 @Html.EditableClass()" @Html.EditableData(Model.Heading)>@Model.Heading</h1>
+    }
+    @if (Model.Text.IsSet())
+    {
     <div class="@Html.EditableClass()" @Html.EditableData(Model.Text)>
         @Model.Text
     </div>
-}
+    }
+</div> <!-- /.content -->
