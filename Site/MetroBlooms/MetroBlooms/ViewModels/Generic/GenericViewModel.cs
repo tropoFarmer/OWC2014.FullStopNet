@@ -27,7 +27,8 @@ namespace MetroBlooms.ViewModels.Generic
 
         public List<LinkViewModel> FetchSubLinks(Node nodeContext)
         {
-            return nodeContext.GetChildNodes()
+            var ancestor = nodeContext.GetAncestorByPathLevel(2);
+            return ancestor.GetChildNodes()
                 .Where(x => !Config.NonContentAliases.Contains(x.NodeTypeAlias))
                 .Select(x => new LinkViewModel(x)).ToList();
         }
