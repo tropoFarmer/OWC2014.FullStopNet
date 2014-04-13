@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
+using MetroBlooms.ViewModels.Home;
+
 using umbraco;
 using Umbraco.Web.Models;
 using Umbraco.Web.Mvc;
@@ -20,5 +23,9 @@ namespace MetroBlooms.Controllers
             return View("Generic", new GenericViewModel(currentNode));
         }
 
+        public ActionResult ApiTest(RenderModel model)
+        {
+            return View(new GardenViewModel());
+        }
     }
 }

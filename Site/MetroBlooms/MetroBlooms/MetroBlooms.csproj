@@ -280,6 +280,7 @@
     <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\GenericController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Extensions\HtmlHelperExtensions.cs" />
     <Compile Include="Extensions\NodeExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Extensions\GeneralExtensions.cs" />
@@ -296,6 +297,7 @@
     <Compile Include="ViewModels\Global\FooterViewModel.cs" />
     <Compile Include="ViewModels\Global\FootViewModel.cs" />
     <Compile Include="ViewModels\Global\HeaderViewModel.cs" />
+    <Compile Include="ViewModels\Home\GardenViewModel.cs" />
     <Compile Include="ViewModels\Home\HomeViewModel.cs" />
     <Compile Include="ViewModels\Global\HeadViewModel.cs" />
     <Compile Include="ViewModels\UmbracoView.cs" />
@@ -380,6 +382,11 @@
     <Content Include="Views\Partials\Foot.cshtml" />
     <Content Include="Views\Partials\Footer.cshtml" />
     <Content Include="Views\Partials\GoogleAnalytics.cshtml" />
+    <Content Include="Views\Learn.cshtml" />
+    <Content Include="Views\ApiTest.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Shared\_AlohaEditor.cshtml" />
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
