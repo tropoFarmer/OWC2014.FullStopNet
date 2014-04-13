@@ -23,7 +23,7 @@ namespace MetroBlooms.ViewModels.Generic
 
             this.Title = contextNode.Name;
             this.Content = contextNode.GetProperty<string>("content");
-            this.HeaderImage = contextNode.GetImage("headerImage");
+            this.HeaderImage = new UmbracoImage(contextNode.GetPropertyRecursive<string>("headerImage"));
             var linkContext = this.FetchLinkContext(contextNode);
             this.SubLinks = this.FetchSubLinks(linkContext);
             this.Sections = FetchSections(contextNode);

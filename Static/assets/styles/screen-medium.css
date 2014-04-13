@@ -31,6 +31,86 @@ Width: 640px+
 }
 
 /* ---------------------------------------------------------------------
+ Home Sections
+------------------------------------------------------------------------ */
+
+.section {
+    min-height: 700px;
+}
+
+.section > .container {
+    padding-top: 200px;
+}
+
+.section_small {
+    min-height: 275px;
+}
+
+.section_small > .container {
+    padding-top: 115px;
+}
+
+/* Alignment */
+.section_center {
+    text-align: center;
+}
+
+.section_left {
+    text-align: left;
+}
+
+.section_left > .section-bg {
+    left: 0;
+}
+
+.section_left > .container {
+    margin: 0 0 0 auto;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.section_right {
+    text-align: right;
+}
+
+.section_right > .section-bg {
+    right: 0;
+}
+
+.section_right > .container {
+    margin: 0 auto 0 0;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+/* Image Width */
+.section_imgSmall,
+.section_imgMedium {
+    color: #333333;
+}
+
+.section_imgSmall > .section-bg {
+    width: 50%;
+}
+
+.section_imgSmall > .container {
+    width: 50%;
+}
+
+.section_imgMedium > .section-bg {
+    width: 66.66%;
+}
+
+.section_imgMedium > .container {
+    width: 33.33%;
+}
+
+.section_left.section_imgFull > .container,
+.section_right.section_imgFull > .container {
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------------------------------
  Pane
 ------------------------------------------------------------------------ */
 
