@@ -10,7 +10,7 @@
     @Html.Action("Head", "Content")
 
     <body>
-        <div class="site">
+        <div class='site@(uQuery.GetCurrentNode().Name=="Home" ? " home" : String.Empty)'>
             @Html.Action("Header", "Content")
             <div class="siteMain" role="main">
                 @RenderBody()
