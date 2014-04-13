@@ -1,7 +1,7 @@
 ﻿@using MetroBlooms.Extensions
 @model MetroBlooms.ViewModels.Sections.CallToActionSection
 
-@if (Model.Title != null)
+@if (Model.Title.IsSet())
 {
     <div class="@Html.EditableClass()" @Html.EditableData(Model.Title)>
         @Model.Title

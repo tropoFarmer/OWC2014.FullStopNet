@@ -307,6 +307,7 @@
     <Compile Include="ViewModels\Sections\ContentWithImageSection.cs" />
     <Compile Include="ViewModels\Sections\ImageDisplaySection.cs" />
     <Compile Include="ViewModels\Sections\IntroSection.cs" />
+    <Compile Include="ViewModels\Sections\RichTextSection.cs" />
     <Compile Include="ViewModels\Sections\QuoteSection.cs" />
     <Compile Include="ViewModels\UmbracoView.cs" />
   </ItemGroup>
@@ -417,6 +418,7 @@
     <Content Include="Views\Partials\DisplayTemplates\QuoteSection.cshtml" />
     <Content Include="Views\Learn.cshtml" />
     <Content Include="Views\Shared\_AlohaEditor.cshtml" />
+    <Content Include="Views\Partials\DisplayTemplates\RichTextSection.cshtml" />
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

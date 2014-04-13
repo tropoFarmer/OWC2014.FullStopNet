@@ -6,7 +6,7 @@
         <div class="grid">
             <div class="grid-col grid-col_secondary">
                 <div class="colNav">
-
+                    left
                 </div>
             </div> <!-- /.grid-col -->
             <div class="grid-col grid-col_primary">
