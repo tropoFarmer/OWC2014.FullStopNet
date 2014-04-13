@@ -13,7 +13,7 @@ namespace MetroBlooms.ViewModels.Generic
     {
         public string Title { get; set; }
         public string Content { get; set; }
-        public UmbracoImage BackgroundImage { get; set; }
+        public UmbracoImage HeaderImage { get; set; }
         public List<LinkViewModel> SubLinks { get; set; }
         public List<BaseSection> Sections { get; set; }
 
@@ -23,7 +23,7 @@ namespace MetroBlooms.ViewModels.Generic
 
             this.Title = contextNode.Name;
             this.Content = contextNode.GetProperty<string>("content");
-            this.BackgroundImage = contextNode.GetImage("backgroundImage");
+            this.HeaderImage = contextNode.GetImage("headerImage");
             var linkContext = this.FetchLinkContext(contextNode);
             this.SubLinks = this.FetchSubLinks(linkContext);
             this.Sections = FetchSections(contextNode);
