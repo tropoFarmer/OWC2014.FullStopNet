@@ -1,6 +1,8 @@
 ﻿@using MetroBlooms.Extensions
 @model MetroBlooms.ViewModels.Sections.IntroSection
 
+<img src="@Model.BackgroundImage.Url" alt="@Model.BackgroundImage.Alt" />
+
 @if (Model.Title.IsSet())
 {
     <div class="@Html.EditableClass()" @Html.EditableData(Model.Title)>
