@@ -508,6 +508,32 @@ img {
 }
 
 /* ---------------------------------------------------------------------
+ Column Navigation
+------------------------------------------------------------------------ */
+
+.colNav {
+    font-size: 15px;
+}
+
+.colNav ul > li > a {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 5px;
+    font-weight: lighter;
+}
+
+.colNav ul > li > a:hover {
+    font-weight: normal;
+}   
+
+.colNav ul > li.active > a {
+    font-weight: normal;
+    color: #403f37;
+    border-bottom: 2px solid #5086c5;
+}
+
+
+/* ---------------------------------------------------------------------
  Site Footer
 ------------------------------------------------------------------------ */
 
