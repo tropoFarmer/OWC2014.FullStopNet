@@ -61,7 +61,20 @@
 <div class="section section_dark section_left js-scrollSection">
     <div class="section-bg" style="background-image: url(assets/images/test.jpg);"></div>
     <div class="container">
-        INDEX
+        <h2 class="hdg hdg_2">Raingardens are one of the
+            most cost-effective stormwater
+            management systems.</h2>
+        <p>Designed and planted to capture rainwater so it can penetrate deep into the soil to help protect and restore water quality.</p>
+        <a class="btn" href="#">Learn More</a>
+    </div> <!-- /.container -->
+</div> <!-- /.section -->
+
+<div class="section section_dark section_center js-scrollSection">
+    <div class="section-bg" style="background-image: url(assets/images/test.jpg);"></div>
+    <div class="container">
+        <h2 class="hdg hdg_2">Permeable pavement can also be a good alternate solution.</h2>
+        <p>Find out more about other creative options being employed by communities in your area.</p>
+        <a class="btn" href="#">Learn More</a>
     </div> <!-- /.container -->
 </div> <!-- /.section -->
 
