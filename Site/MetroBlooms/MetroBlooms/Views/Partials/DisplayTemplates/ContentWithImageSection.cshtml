@@ -1,0 +1,7 @@
+﻿@model MetroBlooms.ViewModels.Sections.ContentWithImageSection
+
+<div>
+    @Html.Raw(Model.Text)
+</div>
+
+<img src="@Model.Image.Url" alt="@Model.Image.Alt" />
