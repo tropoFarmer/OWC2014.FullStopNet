@@ -216,6 +216,7 @@ img {
 }
 
 .hdg_arch {
+    border-bottom: 2px solid #5086c5;
     font-size: 20px;
     font-family: 'Architects Daughter', 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -318,6 +319,10 @@ img {
     padding: 50px 20px;
     position: relative;
     z-index: 5;
+}
+
+.section .btn {
+    margin-top: 16px;
 }
 
 /* Color Selection */
