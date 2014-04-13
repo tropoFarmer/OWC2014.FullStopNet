@@ -16,7 +16,13 @@ namespace MetroBlooms.ViewModels.Generic
         {
             if (contextNode == null) return;
 
-            Content = contextNode.GetProperty<string>("content");
+            this.Content = contextNode.GetProperty<string>("content");
+            this.SubLinks = this.FetchSubLinks(contextNode);
+        }
+
+        public List<Node> FetchSubLinks(Node nodeContext)
+        {
+            return nodeContext.GetChildNodes().ToList();
         }
     }
 }
