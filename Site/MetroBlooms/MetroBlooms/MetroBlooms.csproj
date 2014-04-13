@@ -278,6 +278,8 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\EventsController.cs" />
+    <Compile Include="ViewModels\EventsViewModel.cs" />
     <Compile Include="Controllers\ExternalController.cs" />
     <Compile Include="Controllers\GenericController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -429,6 +431,7 @@
     <Content Include="Views\Learn.cshtml" />
     <Content Include="Views\Shared\_AlohaEditor.cshtml" />
     <Content Include="Views\Partials\DisplayTemplates\RichTextSection.cshtml" />
+    <Content Include="Views\Events\ListEvents.cshtml" />
     <None Include="Web.Dev.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -462,7 +465,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63385</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

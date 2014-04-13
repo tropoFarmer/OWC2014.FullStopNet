@@ -131,7 +131,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoteApi\ApiBase.cs" />
     <Compile Include="RemoteApi\EvaluatorApi.cs" />
+    <Compile Include="ViewModels\Event.cs" />
+    <Compile Include="RemoteApi\EventApi.cs" />
     <Compile Include="RemoteApi\GardenApi.cs" />
+    <Compile Include="ViewModels\Location.cs" />
     <Compile Include="ViewModels\ApiCredentials.cs" />
     <Compile Include="ViewModels\Evaluator.cs" />
     <Compile Include="ViewModels\GardenEvaluation.cs" />
