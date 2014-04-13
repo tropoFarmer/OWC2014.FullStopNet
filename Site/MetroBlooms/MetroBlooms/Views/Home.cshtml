@@ -1,0 +1,5 @@
+@model MetroBlooms.ViewModels.Home.HomeViewModel
+@using MetroBlooms.Extensions
+
+@Html.Raw(Model.MainContent)
+<img src="@Model.Image.UrlWithConstraints(0,240)" alt="@Model.Image.Alt" />
