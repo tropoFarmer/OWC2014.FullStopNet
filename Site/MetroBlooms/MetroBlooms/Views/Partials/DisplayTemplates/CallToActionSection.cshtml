@@ -1,27 +1,22 @@
 ﻿@using MetroBlooms.Extensions
 @model MetroBlooms.ViewModels.Sections.CallToActionSection
 
-@if (Model.BackgroundColor.IsSet())
-{
-    String.Format("#{0}", Model.BackgroundColor);
-}
-
-<img src="@Model.BackgroundImage.Url" alt="@Model.BackgroundImage.Alt" />
-
-@if (Model.Title.IsSet())
-{
-    <div class="@Html.EditableClass()" @Html.EditableData(Model.Title)>
-        @Model.Title
-    </div>
-}
-
-<div class="@Html.EditableClass()" @Html.EditableData(Model.Text)>
-    @Html.Raw(Model.Text)
-</div>
-
-@Model.Alignment 
-
-@if (Model.CTA != null)
-{
-    <a href="@Model.CTA.Url" title="@Model.CTA.Title">@Model.CTA.Title</a>
-}
+<div class="section section_@Model.Alignment.ToLower() section_img@(Model.ImageSize) js-scrollSection">
+    <div class="section-bg" @Html.Raw((Model.Image.Url.IsSet() ? "style='background-image: url(" + @Model.Image.Url + ");'" : ""))></div>
+    <div class="container">
+        @if (Model.Title.IsSet())
+        {
+            <h3 class="hdg hdg_arch @Html.EditableClass()" @Html.EditableData(Model.Title)>@Model.Title</h3>
+        }
+        @if (Model.Text.IsSet())
+        {
+            <div class="@Html.EditableClass()" @Html.EditableData(Model.Text)>
+                @Html.Raw(Model.Text)
+            </div>
+        }
+        @if (Model.CTA.Title.IsSet())
+        {
+            <a class="btn" href="@Model.CTA.Url" title="@Model.CTA.Title">@Model.CTA.Title</a>
+        }
+    </div> <!-- /.container -->
+</div> <!-- /.section -->

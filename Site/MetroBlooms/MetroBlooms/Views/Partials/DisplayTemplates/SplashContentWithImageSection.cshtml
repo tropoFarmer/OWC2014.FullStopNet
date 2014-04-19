@@ -1,13 +1,31 @@
 ﻿@using MetroBlooms.Extensions
 @model MetroBlooms.ViewModels.Sections.SplashContentWithImageSection
 
-<img src="@Model.BackgroundImage.Url" alt="@Model.BackgroundImage.Alt" />
-
-@if (Model.Title.IsSet())
-{
-    <div class="@Html.EditableClass()" @Html.EditableData(Model.Title)>
-        @Html.Raw(Model.Title)
-    </div>
-}
-
-@Model.Alignment
+<div class="section section_@(Model.SectionSize.ToLower() == "large" ? "imgFull" : "small") section_@Model.Theme.ToLower() section_@Model.Alignment.ToLower() js-scrollSection">
+    <div class="section-bg" style="@Html.Raw((Model.BackgroundImage.Url.IsSet() ? "background-image: url(" + @Model.BackgroundImage.Url + ");" : "")) @Html.Raw((Model.BackgroundColor.IsSet() ? "background-color: #" + @Model.BackgroundColor + ";" : ""))"></div>
+    <div class="container">
+        <div class="homeContent homeContent_title">
+            @if (Model.Title.IsSet())
+            {
+                switch (Model.TitleSize.ToLower())
+                {
+                    default:
+                    case "large":
+                        <h1 class="hdg hdg_1 @Html.EditableClass()" @Html.EditableData(Model.Title)>@Html.Raw(Model.Title)</h1>
+                        break;
+                    case "small":
+                        <h2 class="hdg hdg_2 @Html.EditableClass()" @Html.EditableData(Model.Title)>@Html.Raw(Model.Title)</h2>
+                        break;
+                }
+            }
+            @if (Model.Text.IsSet())
+            {
+                <p class="@Html.EditableClass()" @Html.EditableData(Model.Text)>@Model.Text</p>
+            }
+            @if (Model.CTA.Title.IsSet())
+            {
+                <a class="btn @(Model.Theme.ToLower() == "dark" ? "btn_rev" : "")" href="@Model.CTA.Url" title="@Model.CTA.Title">@Model.CTA.Title</a>
+            }
+        </div>
+    </div> <!-- /.container -->
+</div> <!-- /.section -->
