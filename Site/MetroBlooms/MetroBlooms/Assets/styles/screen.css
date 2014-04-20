@@ -711,9 +711,16 @@ img {
 
 .event-description {
     display: none;
-
     padding: 20px 80px;
+    border-bottom: 1px solid #c7c6b9;
+}
 
+.event-description .address {
+    margin-bottom: 20px;
+}
+
+.event-description-actions {
+    margin-top: 20px;
 }
 
 .clearfix {
