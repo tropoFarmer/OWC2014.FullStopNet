@@ -398,8 +398,7 @@
     <Content Include="Config\umbracoSettings.config" />
     <Content Include="Config\UrlRewriting.config" />
     <Content Include="Config\xsltExtensions.config" />
-    <None Include="Properties\PublishProfiles\Sandbox - FE3 %28Matt%29.pubxml" />
-    <None Include="Properties\PublishProfiles\Prod.pubxml" />
+    <None Include="Properties\PublishProfiles\Sandbox - FE3.pubxml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
